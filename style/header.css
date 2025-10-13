@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --verde: #1A824D;
+    --azul: #2678BF;
+}
+header{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+}
+a{
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+a:hover{
+    color: var(--verde);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.botoes_cadastro{
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+#entrar{
+    padding: 9px 16px;
+    border: 1px var(--verde) solid;
+    border-radius: 18px;
+    color: var(--verde);
+    font-weight: bold;
+    cursor: pointer;
+}
+#entrar:hover{
+    background-color: var(--verde);
+    border: 0;
+    color: white;
+    text-decoration: underline;
+}
+#cadastrar{
+    padding: 9px 16px;
+    border: 0;
+    border-radius: 18px;
+    color: white;
+    font-weight: bold;
+    background-color: var(--verde);
+    cursor: pointer;
+}
+#cadastrar:hover{
+    background-color: white;
+    border: 1px solid var(--verde);
+    color: var(--verde);
+    text-decoration: underline;
+}

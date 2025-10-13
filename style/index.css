@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --verde: #1A824D;
+    --azul: #2678BF;
+}
+/*MAIN*/
+/*CARROSEL*/
+.carrosel{
+    background: url(/img/carrosel_tela_inicial.png) no-repeat center;
+    background-size: cover;
+    height: 50vh;
+
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.carrosel p{
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.carrosel .barra_pesquisa{
+    width: 693px;
+    background-color: white;
+    height: 64px;
+    border-radius: 33px;
+    display: flex;
+}
+input{
+    width: 500px;
+    margin: auto;
+    height: 100%;
+    border-bottom-left-radius: 33px;
+    border-top-left-radius: 33px;
+    border: 0;
+}
+input:focus{
+    outline: none;
+}
+.btn_pesquisar{
+    display: flex;
+    border-radius: 33px;
+    border: 0;
+    background-color: var(--verde);
+    margin: auto;
+    padding: 10px;
+    gap: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.btn_pesquisar .bi-search{
+    color: white;
+    
+}
+/*EVENTOS EM DESTAQUE E PRÓXIMOS*/
+.linha_eventos{
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.eventos_destaque h1{
+    text-align: center;
+    padding: 20px;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+.eventos_proximos h1{
+    text-align: center;
+    padding: 20px;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+.caixa_eventos{
+    width: 241px;
+    height: 214px;
+    border: 2px solid var(--verde);
+    border-radius: 14px;
+    font-weight: bold;
+    box-shadow: 5px 5px 10px #8e8e8e;
+}
+.caixa_eventos:hover{
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+.data_evento{
+    position: absolute;
+    padding: 5px;
+    background-color: var(--azul);
+    margin: 10px 0px 0px 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.data_evento:hover{
+    background-color: white;
+    border: 1px solid var(--azul);
+    color: var(--azul);
+}
+.caixa_eventos a img{
+    width: 241px;
+    height: 145px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+.caixa_eventos .nome_show, .distancia_show{
+    padding-left: 7px;
+    padding-top: 7px;
+    font-weight: bold;
+}
+.caixa_eventos .distancia_show{
+    color: #8e8e8e;
+    font-size: 0.7rem;
+}
