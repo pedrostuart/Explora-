@@ -10,17 +10,19 @@
 </head>
 <body>
     <header>
-        <a href=""><img src="img/logo.png" alt="Logo Site"></a>
-        <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="">Eventos</a></li>
-            <li><a href="">Mapa</a></li>
-            <li><a href="">Favoritos</a></li>
-        </ul>
-        <div class="botoes_cadastro">
-            <button id="entrar">Entrar</button>
-            <button id="cadastrar">Cadastre-se</button>
-        </div>
+        <nav>
+            <a href=""><img src="img/logo.png" alt="Logo Site"></a>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="">Eventos</a></li>
+                <li><a href="">Mapa</a></li>
+                <li><a href="">Favoritos</a></li>
+            </ul>
+            <div class="botoes_cadastro">
+                <button id="entrar">Entrar</button>
+                <button id="cadastrar">Cadastre-se</button>
+            </div>
+        </nav>
     </header>
     <main>
         <section class="carrosel">
@@ -36,12 +38,61 @@
         </section>
         <section class="informacoes_eventos">
             
-            <div id="sobre_evento" class="caixas_sombras">
-                <h1>Sobre o evento</h1>
-                <p>O The Weeknd, um dos artistas mais influentes da música contemporânea, apresenta seu aguardado show no Brasil como parte de sua turnê "After Hours til Dawn". Com produção visual espetacular e a voz marcante que conquistou fãs em todo o mundo, Abel Tesfaye promete uma noite inesquecível de R&B alternativo e pop experimental.
-                </p>
-                <p>O show contará com performances dos maiores sucessos de sua carreira, incluindo hits dos álbuns "After Hours", "Dawn FM" e "Starboy", além de clássicos como "Blinding Lights", "Save Your Tears", "The Hills" e "Can't Feel My Face". A experiência imersiva combina tecnologia de ponta com performances cativantes, criando um espetáculo audiovisual que transcende o formato tradicional de concerto.</p>
-            </div>
+            <article id="sobre_evento" class="caixas">
+                    <div class="info_sobre_evento">
+                        <div class="titulo_icon">
+                            <i class="bi-info-circle-fill"></i>
+                            <h1>Sobre o evento</h1>
+                        </div>
+                        <p>O The Weeknd, um dos artistas mais influentes da música contemporânea, apresenta seu aguardado show no Brasil como parte de sua turnê "After Hours til Dawn". Com produção visual espetacular e a voz marcante que conquistou fãs em todo o mundo, Abel Tesfaye promete uma noite inesquecível de R&B alternativo e pop experimental.
+                        </p>
+                        <p>O show contará com performances dos maiores sucessos de sua carreira, incluindo hits dos álbuns "After Hours", "Dawn FM" e "Starboy", além de clássicos como "Blinding Lights", "Save Your Tears", "The Hills" e "Can't Feel My Face". A experiência imersiva combina tecnologia de ponta com performances cativantes, criando um espetáculo audiovisual que transcende o formato tradicional de concerto.</p>
+                    </div>
+                    <div id="extras">
+                        <div class="linha">
+                            <div class="info_extras">
+                            
+                                <div class="titulo_icon">
+                                    <i class="bi bi-star-fill"></i>
+                                    <h2>Destaques do Evento</h2>
+                                </div>
+                               <p>The Weeknd, com participação especial de Annita.</p>
+                            </div>
+                            <div class="info_extras">
+                            
+                                <div class="titulo_icon">
+                                    <i class="bi bi-star-fill"></i>
+                                    <h2>Capacidade</h2>
+                                </div>
+                            
+                               <p>45.000 pessoas - Estádio Allianz Parque</p>
+                            </div>
+                        </div>
+                        <div class="linha">
+                            <div class="info_extras">
+                            
+                                <div class="titulo_icon">
+                                    <i class="bi bi-star-fill"></i>
+                                    <h2>Abertura dos Portões</h2>
+                                </div>
+                            
+                               <p>18:00 - Recomendamos chegar cedo</p>
+                            </div>
+                            <div class="info_extras">
+                            
+                                <div class="titulo_icon">
+                                    <i class="bi bi-star-fill"></i>
+                                    <h2>Classificação Etária</h2>
+                                </div>
+                            
+                               <p>The Weeknd, com participação especial de Annita.</p>
+                            </div>
+                        </div>
+                    </div>
+            </article>
+            <article id="ingressos" class="caixas">
+                <h1>Ingressos a partir de: <br><span style="color: #2678BF;">275R$</span></h1>
+            </article>
         </section>
     </main>
 </body>

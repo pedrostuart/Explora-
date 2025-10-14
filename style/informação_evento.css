@@ -1,4 +1,17 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+:root{
+    --verde: #1A824D;
+    --azul: #2678BF;
+}
 /*Carrossel*/
+
 .carrosel{
     background: url(/img/carrosel_info_eventos.png) no-repeat center;
     background-size: cover;
@@ -26,28 +39,75 @@
 }
 .icons-info p{
     font-size: 0.8rem;
+    letter-spacing: 0.85px;
 }
 /*INFORMAÇÕES SOBRE O EVENTO*/
+
 .informacoes_eventos{
     padding: 20px;
+    display: flex;
+    justify-content: space-around;
+
 }
-.caixas_sombras{
+.caixas{
     box-shadow: 0px 0px 10px #8e8e8e;
-}
-#sobre_evento{
-    width: 746px;
-    height: 730px;
+    
     border-radius: 10px;
-    padding: 20px;
     
 }
-#sobre_evento h1{
-    padding: 20px;
+
+/* CAIXA SOBRE O EVENTO*/
+
+#sobre_evento{
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    width: 746px;
+    height: 580px;
+    padding: 00px 20px 20px 20px;
 }
 #sobre_evento p{
     padding-top: 10px;
-    text-indent: 10px;
     line-height: 25px;
-    font-weight: normal;
-
+    font-weight: 500;
+}   
+.titulo_icon{
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 10px 0px;
 }
+
+.titulo_icon h1{
+    padding-left: 10px;
+}
+.titulo_icon h2{
+    font-size: 1.2rem;
+    padding-left: 10px;
+}
+.titulo_icon i{
+    color: var(--verde);
+}
+
+/*Parte de CIMA*/
+ 
+.info_sobre_evento{
+    padding: 28px;
+}
+/*Parte de BAiXO*/
+#extras{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 28px;
+}
+
+/*CAIXA INGRESSOS*/
+#ingressos{
+    width: 406px;
+    height: 580px;
+    padding: 0px 20px 20px 20px;
+}
+#ingressos h1{
+    text-align: center;
+    padding: 20px;
+}
+
