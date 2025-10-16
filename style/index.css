@@ -102,6 +102,7 @@ input:focus{
     color: white;
     font-size: 0.9rem;
     cursor: pointer;
+    font-weight: bold;
 }
 .data_evento:hover{
     background-color: white;
