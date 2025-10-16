@@ -9,11 +9,13 @@
 :root{
     --verde: #1A824D;
     --azul: #2678BF;
+    --borda-caixa: 10px;
+    --sombra: 0px 1px 5px #8e8e8ead;
 }
 /*Carrossel*/
 
 .carrosel{
-    background: url(/Explora-/img/carrosel_info_eventos.png) no-repeat center;
+    background: url(/img/carrosel_info_eventos.png) no-repeat center;
     background-size: cover;
     height: 50vh;
     
@@ -50,7 +52,7 @@
 
 }
 .caixas{
-    box-shadow: 0px 0px 10px #8e8e8e;
+    box-shadow: var(--sombra);
     
     border-radius: 10px;
     
@@ -105,9 +107,45 @@
     width: 406px;
     height: 580px;
     padding: 0px 20px 20px 20px;
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
 }
 #ingressos h1{
     text-align: center;
     padding: 20px;
+}
+/*Ingressos*/
+.info-precos-ingressos{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.precos-ingressos{
+    border-radius: var(--borda-caixa);
+    height: 70px;
+    width: 191px;
+    border: 1px solid var(--azul);
+    box-shadow: var(--sombra);
+}
+.precos-ingressos:hover{
+    transition: 0.3s;
+    transform: translateY(-2px);
+}
+.precos-ingressos h2{
+    padding: 10px 0px 0px 10px;
+    font-size: 1.1rem;
+}
+.precos-ingressos p{
+    color: var(--azul);
+    padding-left: 2px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+.precos-ingressos span{
+    font-size: 1.6rem;
+    padding: 0px;
 }
 
