@@ -11,6 +11,7 @@
     --azul: #2678BF;
     --borda-caixa: 10px;
     --sombra: 0px 1px 5px #8e8e8ead;
+    --borda-botao: 35px;
 }
 /*Carrossel*/
 
@@ -42,13 +43,14 @@
 .icons-info p{
     font-size: 0.8rem;
     letter-spacing: 0.85px;
+    align-items: center;
 }
 /*INFORMAÇÕES SOBRE O EVENTO*/
 
 .informacoes_eventos{
     padding: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
 
 }
 .caixas{
@@ -61,15 +63,14 @@
 /* CAIXA SOBRE O EVENTO*/
 
 #sobre_evento{
-    justify-content: space-around;
+    gap: 25px;
     display: flex;
     flex-direction: column;
     width: 746px;
-    height: 580px;
+    height: 100%;
     padding: 00px 20px 20px 20px;
 }
 #sobre_evento p{
-    padding-top: 10px;
     line-height: 25px;
     font-weight: 500;
 }   
@@ -98,16 +99,22 @@
 /*Parte de BAiXO*/
 #extras{
     display: flex;
-    justify-content: space-evenly;
     padding: 28px;
 }
-
+.info_extras{
+    height: 100%;
+}
+#extras .linha{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
 /*CAIXA INGRESSOS*/
 #ingressos{
-    width: 426px;
-    height: 580px;
+    width: 420px;
+    height: 100%;
     padding: 0px 20px 20px 20px;
-    gap: 50px;
+    gap: 25px;
     display: flex;
     flex-direction: column;
 }
@@ -125,7 +132,7 @@
 .precos-ingressos{
     border-radius: var(--borda-caixa);
     height: 70px;
-    width: 191px;
+    width: 198px;
     border: 1px solid var(--azul);
     box-shadow: var(--sombra);
 }
@@ -143,9 +150,61 @@
     font-size: 0.9rem;
     display: flex;
     align-items: center;
+    padding: 0px 0px 0px 10px;
 }
 .precos-ingressos span{
-    font-size: 1.6rem;
-    padding: 0px;
+    font-size: 1.6rem;  
+    margin-bottom: 3.6px;
 }
-
+/*BOTÕES DA CAIXA DE INGRESSO*/
+.btns-ingressos{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+#ingressos button{
+    border: none;
+    padding: 12px 17px;
+    background-color: var(--azul);
+    border-radius: var(--borda-botao);
+    color: white;
+}
+#ingressos button:hover{
+    border: 1px solid var(--azul) ;
+    background-color: white;
+    color: var(--azul);
+}
+#ingressos .btn-comprar{
+    border: none;   
+    padding: 10px 15px;
+    background-color: var(--azul);
+    border-radius: var(--borda-botao);
+    color: white;
+    text-decoration: none;
+}
+/*LOCAL CAIXA DE INGRESSO*/
+.local {
+    color: black;
+    font-size: 10pt;
+}
+/*ABRIR MAPA NA CAIXA DE INGRESSO*/
+.abrir-mapa{
+    background-color: var(--azul);
+    width: 340px;
+    margin: auto;
+    
+    height: 159px;
+    border-radius: var(--borda-caixa);
+    background: linear-gradient(#2678BF80), url(/img/minimapa.png) no-repeat ;
+    background-size: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.abrir-mapa a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
