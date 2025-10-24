@@ -6,6 +6,9 @@
 :root{
     --verde: #1A824D;
     --azul: #2678BF;
+    --borda-caixa: 10px;
+    --sombra: 0px 1px 5px #8e8e8ead;
+    --borda-botao: 35px;
 }
 header{
     background-color: rgb(255, 255, 255);
@@ -40,7 +43,7 @@ header a:hover{
 #entrar{
     padding: 9px 16px;
     border: 1px var(--verde) solid;
-    border-radius: 18px;
+    border-radius: 35px;
     color: var(--verde);
     font-weight: bold;
     cursor: pointer;
@@ -54,8 +57,8 @@ header a:hover{
 }
 #cadastrar{
     padding: 9px 16px;
-    border: 0;
-    border-radius: 18px;
+    border: 1px solid var(--verde);
+    border-radius: 35px;
     color: white;
     font-weight: bold;
     background-color: var(--verde);

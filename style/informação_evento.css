@@ -19,14 +19,11 @@
     background: url(/img/carrosel_info_eventos.png) no-repeat center;
     background-size: cover;
     height: 50vh;
-    
-    
+    align-items: center;
+    display: flex;
 }
 .bloco_informacoes{
-    position: absolute;
-    top: 190px;
-    left: 200px;
-    
+    margin-left: 250px;
 }
 .carrosel h1{
     color: white;
@@ -63,9 +60,9 @@
 /* CAIXA SOBRE O EVENTO*/
 
 #sobre_evento{
-    gap: 25px;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     width: 746px;
     height: 100%;
     padding: 00px 20px 20px 20px;
@@ -73,6 +70,7 @@
 #sobre_evento p{
     line-height: 25px;
     font-weight: 500;
+    padding-top: 10px;
 }   
 .titulo_icon{
     display: flex;
@@ -100,27 +98,29 @@
 #extras{
     display: flex;
     padding: 28px;
+    flex-wrap: wrap;
+    margin: auto;
 }
 .info_extras{
-    height: 100%;
+    width: 340px;
 }
 #extras .linha{
     gap: 20px;
     display: flex;
-    flex-direction: column;
 }
 /*CAIXA INGRESSOS*/
 #ingressos{
     width: 420px;
     height: 100%;
     padding: 0px 20px 20px 20px;
-    gap: 25px;
     display: flex;
     flex-direction: column;
+    gap: 25px;
 }
 #ingressos h1{
     text-align: center;
     padding: 20px;
+    font-size: 1.6rem;
 }
 /*Ingressos*/
 .info-precos-ingressos{
@@ -163,19 +163,19 @@
     gap: 25px;
 }
 #ingressos button{
-    border: none;
+    border: 1px solid var(--azul);
     padding: 12px 17px;
     background-color: var(--azul);
     border-radius: var(--borda-botao);
     color: white;
 }
 #ingressos button:hover{
-    border: 1px solid var(--azul) ;
+    border: 1px solid var(--azul);
     background-color: white;
     color: var(--azul);
 }
 #ingressos .btn-comprar{
-    border: none;   
+    border: 1px solid var(--azul); 
     padding: 10px 15px;
     background-color: var(--azul);
     border-radius: var(--borda-botao);
@@ -186,13 +186,14 @@
 .local {
     color: black;
     font-size: 10pt;
+    
+    padding: 9.5px;
 }
 /*ABRIR MAPA NA CAIXA DE INGRESSO*/
 .abrir-mapa{
     background-color: var(--azul);
     width: 340px;
     margin: auto;
-    
     height: 159px;
     border-radius: var(--borda-caixa);
     background: linear-gradient(#2678BF80), url(/img/minimapa.png) no-repeat ;
@@ -207,4 +208,7 @@
     align-items: center;
     color: white;
     font-weight: bold;
+}
+.abrir-mapa a:hover{
+    cursor: pointer;
 }
