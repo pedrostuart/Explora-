@@ -43,7 +43,7 @@ header a:hover{
 #entrar{
     padding: 9px 16px;
     border: 1px var(--verde) solid;
-    border-radius: 35px;
+    border-radius: var(--borda-botao);
     color: var(--verde);
     font-weight: bold;
     cursor: pointer;
@@ -58,7 +58,7 @@ header a:hover{
 #cadastrar{
     padding: 9px 16px;
     border: 1px solid var(--verde);
-    border-radius: 35px;
+    border-radius: var(--borda-botao);
     color: white;
     font-weight: bold;
     background-color: var(--verde);
