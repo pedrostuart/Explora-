@@ -45,7 +45,7 @@
 /*INFORMAÇÕES SOBRE O EVENTO*/
 
 .informacoes_eventos{
-    padding: 20px;
+    padding: 40px;
     display: flex;
     
     width: 1350px;
@@ -167,10 +167,11 @@
 }
 #ingressos button{
     border: 1px solid var(--azul);
-    padding: 12px 17px;
     background-color: var(--azul);
     border-radius: var(--borda-botao);
     color: white;
+    padding: 10px 12px;
+    text-align: center;
 }
 #ingressos button:hover{
     border: 1px solid var(--azul);
@@ -179,11 +180,12 @@
 }
 #ingressos .btn-comprar{
     border: 1px solid var(--azul); 
-    padding: 10px 15px;
     background-color: var(--azul);
     border-radius: var(--borda-botao);
     color: white;
     text-decoration: none;
+    text-align: center;
+    padding: 10px 12px;
 }
 /*LOCAL CAIXA DE INGRESSO*/
 .local {
