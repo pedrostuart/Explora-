@@ -31,13 +31,18 @@
     <main>
         <section class="menu-lateral">
             <a href=""><span class="material-symbols-outlined">map_search</span>Visualizar Mapa</a>
-            <div class="filtrar-data">
-                <buttton class="btn-data">Hoje</buttton>
-                <buttton class="btn-data">Amanhã</buttton>
-                <buttton class="btn-data">Essa Semana</buttton>
-                <buttton class="btn-data">Esse Mês</buttton>
+            
+            <div>
+                <h2>Data</h2>
+                <div class="filtrar-data">
+                    <buttton class="btn-preferencia">Hoje</buttton>
+                    <buttton class="btn-preferencia">Amanhã</buttton>
+                    <buttton class="btn-preferencia">Essa Semana</buttton>
+                    <buttton class="btn-preferencia">Esse Mês</buttton>
+                </div>
             </div>
             <div class="filtrar-distancia">
+                <h2>Distância</h2>
                 <div>
                     <input type="radio" id="5km" name="distancia" class="radio">
                     <label for="5km"> Até 5km de distância</label>
@@ -64,23 +69,26 @@
                 </div>
             </div>
             <div class="orcamento">
-                <label for="preco">Orçamento Diponível</label>
+                <h2>Orçamento Diponível</h2>
                 <div class="barra_input">
-                    
-                        <i class="bi-cash"></i>
-                    
+                    <i class="bi-cash"></i>
                     <input type="text" name="preco" id="preco" placeholder="Preço Máximo">
-                    
                 </div>
             </div>
-            <div class="preferencias">
-            <buttton class="btn-data">Cinema</buttton>
-            <buttton class="btn-data">Arte</buttton>
-            <buttton class="btn-data">Música</buttton>
-            <buttton class="btn-data">Festivais</buttton>
-            <buttton class="btn-data">Esportes</buttton>
-            <buttton class="btn-data">Gastronomia</buttton>
-            <buttton class="btn-data">Teatro</buttton>
+            <div>
+                <h2>Preferências</h2>
+                <div class="filtrar-gostos">
+                    <buttton class="btn-preferencia">Cinema</buttton>
+                    <buttton class="btn-preferencia">Arte</buttton>
+                    <buttton class="btn-preferencia">Música</buttton>
+                    <buttton class="btn-preferencia">Festivais</buttton>
+                    <buttton class="btn-preferencia">Esportes</buttton>
+                    <buttton class="btn-preferencia">Gastronomia</buttton>
+                    <buttton class="btn-preferencia">Teatro</buttton>
+                </div>
+            </div>
+            <div class="btn-filtrar">
+                <button class="btn-preferencia">Filtrar<i class="bi bi-funnel-fill"></i></button>
             </div>
         </section>
         <section class="descobrir-eventos">

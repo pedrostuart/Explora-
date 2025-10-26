@@ -14,16 +14,31 @@
 .menu-lateral{
     border-right: 1px solid black;
     border-top: 1px solid black;
-    width: 270px;
-    padding-left: 25px;
-    padding-top: 25px;
-    height: 100%;
+    width: 255px;
+    padding: 20px 25px 0px 25px;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    position: fixed;
+    gap: 25px;
 }
 
+/*MENU LATERAL (BOTÕES) (TITULO)*/
+h2{
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 0px 0px 5px 5px;
+}
 
+.btn-preferencia{
+    background-color: var(--azul);
+    padding: 9px 16px;
+    border-radius: var(--borda-botao);
+    border: 1px solid var(--azul);
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
 /*MENU LATERAL (LINK)*/
 
 .menu-lateral a{
@@ -39,17 +54,9 @@
 .filtrar-data{
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 6.5px;
 }
-.btn-data{
-    background-color: var(--azul);
-    padding: 9px 16px;
-    border-radius: var(--borda-botao);
-    
-    color: white;
-    font-weight: bold;
-    font-size: 0.9rem;
-}
+
 
 /*MENU LATERAL (DISTÂNCIA)*/
 
@@ -102,4 +109,28 @@
 }
 .orcamento input:focus{
     outline: none;
+}
+
+/*MENU LATERAL (Gostos)*/
+
+
+.filtrar-gostos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6.5px;
+}
+
+.btn-filtrar .btn-preferencia{
+    display: flex;
+    margin: auto;
+    gap: 4px;
+}
+
+
+
+/*DESCOBIR EVENTOS*/
+
+
+.descobrir-eventos{
+    border-top: 1px solid black;
 }
