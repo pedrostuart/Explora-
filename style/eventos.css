@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --verde: #1A824D;
+    --azul: #2678BF;
+    --borda-caixa: 10px;
+    --sombra: 0px 1px 5px #8e8e8ead;
+    --borda-botao: 35px;
+}
+/*MENU LATERAL*/
+
+.menu-lateral{
+    border-right: 1px solid black;
+    width: 270px;
+    padding-left: 25px;
+    padding-top: 25px;
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+/*MENU LATERAL (LINK)*/
+
+.menu-lateral a{
+    color: var(--verde);
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+
+/*MENU LATERAL (DATA)*/
+
+.filtrar-data{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+} 
+.filtrar-data .btn-data{
+    background-color: var(--azul);
+    padding: 9px 16px;
+    border-radius: var(--borda-botao);
+    
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+/*MENU LATERAL (DISTÂNCIA)*/
+
+.filtrar-distancia{
+    display: flex;
+    flex-direction: column;
+}
+.filtrar-distancia div{
+    display: flex;
+    gap: 10px;
+}
+.filtrar-distancia label{
+    color: #8e8e8e;
+    font-weight: bold;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+/*MENU LATERAL (ORÇAMRNTO)*/
+
+
+.orcamento{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+}
+.orcamento .barra_input{
+    width: 210px;
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--verde);
+    border-radius: var(--borda-botao);
+    
+}
+.orcamento label{
+    font-weight: bolder;
+    
+}
+.orcamento .bi-cash{
+    padding-left: 8px;
+    color: var(--verde);
+    font-size: 1.2rem;
+}
+.orcamento input{
+    border-radius: var(--borda-botao);
+    border: none;
+    width: 100%;
+    padding: 10px;
+}
+.orcamento input:focus{
+    outline: none;
+}
