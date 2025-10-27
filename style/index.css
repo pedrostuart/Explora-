@@ -71,6 +71,7 @@ input:focus{
     display: flex;
     gap: 20px;
     justify-content: center;
+    
 }
 .eventos_destaque h1{
     text-align: center;
