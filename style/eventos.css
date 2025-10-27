@@ -135,7 +135,7 @@ h2{
 
 /*DESCOBIR EVENTOS*/
 
-
+/*DESCOBIR EVENTOS (PESQUISAR)*/
 .descobrir-eventos{
     border-top: 1px solid black;
     padding: 20px;
@@ -179,4 +179,56 @@ h2{
 .btn_pesquisar .bi-search{
     color: white;
     
+}
+
+/*DESCOBIR EVENTOS (EVENTOS)*/
+.linha_eventos{
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.caixa_eventos{
+    width: 241px;
+    height: 214px;
+    border: 2px solid var(--verde);
+    border-radius: 14px;
+    font-weight: bold;
+    box-shadow: 5px 5px 10px #8e8e8e;
+}
+.caixa_eventos:hover{
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+.data_evento{
+    position: absolute;
+    padding: 5px;
+    background-color: var(--azul);
+    margin: 10px 0px 0px 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+.data_evento:hover{
+    background-color: white;
+    border: 1px solid var(--azul);
+    color: var(--azul);
+}
+.caixa_eventos a img{
+    width: 241px;
+    height: 145px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+.caixa_eventos .nome_show, .distancia_show{
+    padding-left: 7px;
+    padding-top: 7px;
+    font-weight: bold;
+}
+.caixa_eventos .distancia_show{
+    color: #8e8e8e;
+    font-size: 0.7rem;
 }
