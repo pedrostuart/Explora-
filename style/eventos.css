@@ -9,17 +9,22 @@
     --sombra: 0px 1px 5px #8e8e8ead;
     --borda-botao: 35px;
 }
+main{
+    display: flex;
+    
+}
 /*MENU LATERAL*/
 
 .menu-lateral{
     border-right: 1px solid black;
     border-top: 1px solid black;
-    width: 255px;
+    width: 380px;
     padding: 20px 25px 0px 25px;
     height: 100vh;
     display: flex;
     flex-direction: column;
     position: fixed;
+    position: relative;
     gap: 25px;
 }
 
@@ -133,4 +138,45 @@ h2{
 
 .descobrir-eventos{
     border-top: 1px solid black;
+    padding: 20px;
+    width: 100%;
+}
+.barra_pesquisa{
+    width: 693px;
+    background-color: white;
+    height: 64px;
+    border-radius: var(--borda-botao);
+    display: flex;
+    box-shadow: var(--sombra);
+    margin: auto;
+}
+
+.barra_pesquisa input{
+    width: 500px;
+    margin: auto;
+    height: 100%;
+    border-bottom-left-radius: 33px;
+    border-top-left-radius: 33px;
+    border: 0;
+}
+.barra_pesquisa input:focus{
+    outline: none;
+}
+.btn_pesquisar{
+    display: flex;
+    border-radius: var(--borda-botao);
+    border: 0;
+    background-color: var(--verde);
+    margin: auto;
+    padding: 10px;
+    gap: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.btn_pesquisar .bi-search{
+    color: white;
+    
 }
