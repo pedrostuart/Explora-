@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --verde: #1A824D;
+    --azul: #2678BF;
+    --borda-caixa: 10px;
+    --sombra: 0px 1px 5px #8e8e8ead;
+    --borda-botao: 35px;
+}
+.favoritados h1{
+    
+    padding: 23px 10px 10px 10px;
+    
+    text-align: center;
+}
+.favoritados h1 .bi-suit-heart-fill{
+    color: red;
+}
+.favoritados p{
+    text-align: center;
+    font-weight: bold;
+}
