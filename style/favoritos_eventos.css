@@ -9,16 +9,132 @@
     --sombra: 0px 1px 5px #8e8e8ead;
     --borda-botao: 35px;
 }
-.favoritados h1{
+.favoritados{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.favoritados .titulo h1{
     
     padding: 23px 10px 10px 10px;
-    
     text-align: center;
 }
-.favoritados h1 .bi-suit-heart-fill{
+.favoritados .titulo h1 .bi-suit-heart-fill{
     color: red;
 }
-.favoritados p{
+.favoritados .titulo p{
     text-align: center;
     font-weight: bold;
+}
+.barra_pesquisa{
+    width: 693px;
+    position: relative;
+    
+    background-color: white;
+    height: 64px;
+    border-radius: var(--borda-botao);
+    display: flex;
+    box-shadow: var(--sombra);
+    margin: auto;
+    
+}
+.barra_pesquisa input{
+    width: 500px;
+    margin: auto;
+    height: 100%;
+    border-bottom-left-radius: 33px;
+    border-top-left-radius: 33px;
+    border: 0;
+}
+.barra_pesquisa input:focus{
+    outline: none;
+}
+.btn_pesquisar{
+    display: flex;
+    border-radius: var(--borda-botao);
+    border: 0;
+    background-color: var(--verde);
+    margin: auto;
+    padding: 10px;
+    gap: 5px;
+    margin-right: 20px;
+    cursor: pointer;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.btn_pesquisar .bi-search{
+    color: white;
+    
+}
+.filtrar-gostos{
+    margin: auto;
+    display: flex;
+    gap: 10px;
+}
+.btn-preferencia{
+    background-color: var(--azul);
+    padding: 9px 10px;
+    border-radius: var(--borda-botao);
+    border: 1px solid var(--azul);
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+/*EVENTOS*/
+.linha_eventos{
+    padding: 30px 20px 20px 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: 100%;
+    position: relative;
+    overflow: auto;
+    max-width: 1500px;
+    margin: auto;
+}
+.caixa_eventos{
+    width: 241px;
+    height: 214px;
+    border: 2px solid var(--verde);
+    border-radius: 14px;
+    font-weight: bold;
+    box-shadow: 5px 5px 10px #8e8e8e;
+}
+.caixa_eventos:hover{
+    transform: translateY(-5px);
+    transition: 0.5s;
+}
+.data_evento{
+    position: absolute;
+    padding: 5px;
+    background-color: var(--azul);
+    margin: 10px 0px 0px 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+.data_evento:hover{
+    background-color: white;
+    border: 1px solid var(--azul);
+    color: var(--azul);
+}
+.caixa_eventos a img{
+    width: 241px;
+    height: 145px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+.caixa_eventos .nome_show, .distancia_show{
+    padding-left: 7px;
+    padding-top: 7px;
+    font-weight: bold;
+}
+.caixa_eventos .distancia_show{
+    color: #8e8e8e;
+    font-size: 0.7rem;
 }
