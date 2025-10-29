@@ -1,4 +1,14 @@
-
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --verde: #1A824D;
+    --azul: #2678BF;
+    --borda-caixa: 10px;
+    --sombra: 0px 1px 5px #8e8e8ead;
+    --borda-botao: 35px;
+}
 main{
     display: flex;
     

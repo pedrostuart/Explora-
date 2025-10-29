@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+:root{
+    --verde: #1A824D;
+    --azul: #2678BF;
+    --borda-caixa: 10px;
+    --sombra: 0px 1px 5px #8e8e8ead;
+    --borda-botao: 35px;
+}
+header{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+header .bi-arrow-left-circle-fill{
+    font-size: 1.8rem;
+    color: var(--verde);
+}
+header img{
+    margin: auto;
+}
+/*MAIN*/
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-login-cadastro{
+    box-shadow: var(--sombra);
+    border-radius: var(--borda-caixa);
+    width: 1000px;
+    height: 600px;
+}
