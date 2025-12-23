@@ -40,6 +40,7 @@ h2{
     color: white;
     font-weight: bold;
     font-size: 0.9rem;
+    cursor: pointer;
 }
 /*MENU LATERAL (LINK)*/
 
@@ -92,7 +93,6 @@ h2{
     align-items: center;
     border: 1px solid var(--verde);
     border-radius: var(--borda-botao);
-    
 }
 .orcamento label{
     font-weight: bolder;
