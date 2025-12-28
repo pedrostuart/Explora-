@@ -32,14 +32,15 @@ header img{
 
 .box-login{
     box-shadow: var(--sombra);
-    border-top-left-radius: var(--borda-caixa);
-    border-bottom-left-radius: var(--borda-caixa);
+    border-top-right-radius: var(--borda-caixa);
+    border-bottom-right-radius: var(--borda-caixa);
     padding: 40px;
     flex-direction: column;
     display: flex;
     justify-content: space-around;
     height: 400px;
     
+    width: 355px;
 }
 h1{
     font-size: 1.2rem;
@@ -49,29 +50,36 @@ p{
     color: #686868;
     text-align: center;
 }
+/*INPUTS*/
 form {
     display: flex;
-    flex-direction: column;
     gap:10px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .barra_input{
-    width: 270px;
+    width: 170px;
     display: flex;
     align-items: center;
     border: 1px solid var(--verde);
     border-radius: var(--borda-botao);background-color: #f0f0f0;
 }
+.barra_input img{
+    padding: 3px 3px 3px 13px;
+}
 .material-symbols-outlined{
     padding-left: 8px;
     color: var(--verde);
     font-size: 1.2rem;
+    
 }
 input{
     border-radius: var(--borda-botao);
     border: none;
     width: 100%;
-    padding: 13px 15px;
+    padding: 13px 6px;
     background-color: #f0f0f0;
+    display: flex;
 }
 input:focus{
     outline: none;
@@ -112,13 +120,13 @@ a{
 @keyframes transicao{
     0%{
         border-radius: var(--borda-caixa);
-        width: 355px;
+        width: 272px;
     }
     100%{
-        transform: translateX(352px);
-        border-top-right-radius: var(--borda-caixa);
-        border-bottom-right-radius: var(--borda-caixa);
-        width: 272px;
+        transform: translateX(-352px);
+        border-top-left-radius: var(--borda-caixa);
+        border-bottom-left-radius: var(--borda-caixa);
+        width: 355px;
     }
 
 }
@@ -126,7 +134,7 @@ a{
     box-shadow: 1px 1px 5px #8e8e8ead;
     padding: 40px;
     height: 400px;
-    width: 272px;
+    width: 355px;
     
     background-color: var(--verde);
     display: flex;
@@ -135,7 +143,7 @@ a{
     flex-direction: column;
     gap: 20px;
     position: relative;
-    right: 352px;
+    left: 352px;
 
     animation: transicao 1s forwards;
     
