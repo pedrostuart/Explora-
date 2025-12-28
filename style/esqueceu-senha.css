@@ -73,7 +73,7 @@ input{
     border-radius: var(--borda-botao);
     border: none;
     width: 100%;
-    padding: 10px;
+    padding: 13px 15px;
 }
 input:focus{
     outline: none;
