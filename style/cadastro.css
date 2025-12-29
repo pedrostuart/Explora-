@@ -22,6 +22,9 @@ header .bi-arrow-left-circle-fill{
 header img{
     margin: auto;
 }
+main{
+    height: 100%;
+}
 /*MAIN*/
 .caixa-geral{
     display: flex;
@@ -30,7 +33,7 @@ header img{
 }
 /*CAIXA LOGIN*/
 
-.box-login{
+.box-cadastro{
     box-shadow: var(--sombra);
     border-top-right-radius: var(--borda-caixa);
     border-bottom-right-radius: var(--borda-caixa);
