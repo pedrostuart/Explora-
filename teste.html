@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Painel do Usuário</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+/* TOPO */
+.topo {
+    background: #1a8f5a;
+    color: white;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.menu button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.menu button.ativo {
+    background: white;
+    color: #1a8f5a;
+}
+
+/* CONTEÚDO */
+.conteudo {
+    padding: 20px;
+}
+
+/* SEÇÕES */
+.secao {
+    display: none;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.secao.ativa {
+    display: block;
+}
+</style>
+</head>
+
+<body>
+
+<!-- TOPO FIXO -->
+<div class="topo">
+    <h2>Maria Fernanda</h2>
+    <p>Exploradora de eventos • São Paulo, SP</p>
+
+    <div class="menu">
+        <button onclick="mostrar('atividade')" class="ativo">Atividade</button>
+        <button onclick="mostrar('favoritos')">Favoritos</button>
+        <button onclick="mostrar('config')">Configurações</button>
+    </div>
+</div>
+
+<!-- CONTEÚDO DINÂMICO -->
+<div class="conteudo">
+
+    <div id="atividade" class="secao ativa">
+        <h3>Atividades Recentes</h3>
+        <p>✔ Evento favoritado</p>
+        <p>✔ Ingresso comprado</p>
+        <p>✔ Avaliação enviada</p>
+    </div>
+
+    <div id="favoritos" class="secao">
+        <h3>Favoritos</h3>
+        <p>❤️ The Weeknd</p>
+        <p>❤️ Festival de Verão</p>
+    </div>
+
+    <div id="config" class="secao">
+        <h3>Configurações</h3>
+        <p>🔔 Notificações</p>
+        <p>📧 E-mail</p>
+        <p>🔒 Privacidade</p>
+    </div>
+
+</div>
+
+<script>
+function mostrar(id) {
+    // esconder todas
+    document.querySelectorAll('.secao').forEach(secao => {
+        secao.classList.remove('ativa');
+    });
+
+    // mostrar a clicada
+    document.getElementById(id).classList.add('ativa');
+
+    // botão ativo
+    document.querySelectorAll('.menu button').forEach(btn => {
+        btn.classList.remove('ativo');
+    });
+
+    event.target.classList.add('ativo');
+}
+</script>
+
+</body>
+</html>
