@@ -23,6 +23,11 @@ header img{
     
     
 }
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    padding: 10px;
+}
 /*MAIN*/
 main{
     justify-content: center;
@@ -31,7 +36,7 @@ main{
 }
 .box{
     background-color: white;
-    height: 550px;
+    height: 350px;
     width: 400px;
     border-radius: var(--borda-caixa);
     box-shadow: var(--sombra);
@@ -40,6 +45,8 @@ main{
     align-items: center;
     display: flex;
     margin: auto;
+    justify-content: center;
+    align-items: center;  
 }
 .bi-arrow-left-circle-fill{
     color: var(--verde);
@@ -52,6 +59,7 @@ form {
     display: flex;
     flex-direction: column;
     gap:20px;
+      
 }
 .barra_input{
     width: 210px;
@@ -99,8 +107,73 @@ select {
 select:focus{
     outline: none;
 }
+label{
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 5px;
+}
 .barra_input img{
     padding-left: 12.5px;
     color: var(--verde);
     font-size: 1.2rem;
+}
+.btn-gostos{
+    color: #757575;
+    background: none;
+    border: none;
+
+    padding: 9px 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+/*DIALOG*/
+#modal{
+    width: 222px;
+    height: 170px;
+    padding: 20px;
+    box-shadow: var(--sombra);
+    border-radius: var(--borda-caixa);
+    border: none;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 40px;
+    flex-direction: column;
+    gap: 20px;
+
+    animation: aberturaModal normal 0.5s;
+}
+@keyframes aberturaModal{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 100;
+    }
+}
+#modal .btn-preferencia{
+    margin: 0;
+    height: 16px;
+    display: flex;
+    box-shadow: var(--sombra);
+}
+.filtrar-gostos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6.5px;
+}
+.aplicar-gostos .btn-aplicar{
+    background-color: #757575;
+    padding: 9px 10px;
+    border-radius: var(--borda-botao);
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+    display: flex;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
 }

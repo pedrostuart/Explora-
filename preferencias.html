@@ -16,9 +16,11 @@
     <div class="box">
         <h1>Selecione seus gostos</h1>
         <form action="#" method="post">
+            
             <div class="barra_input">
                 <img src="img/icone-logo.png" alt="">
-                <select name="local" id="local" aria-placeholder="local">
+                <select name="local" id="local">
+                    <option value="" selected disabled>Selecione seu local</option>
                     <option value="acre">Acre</option>
                     <option value="alagoas">Alagoas</option>
                     <option value="amapa">Amapá</option>
@@ -48,11 +50,44 @@
                     <option value="tocantins">Tocantins</option>
                 </select>
             </div>
+            
+            
             <div class="barra_input">
-                <span class="material-symbols-outlined">lock</span>
-                <input type="password" name="confirmar_senha_nova" id="confirmar_senha_nova" placeholder="Confirmar senha nova" minlength="6">
+                <span class="material-symbols-outlined">attach_money</span>
+                <input type="number" name="preco" id="preco" placeholder="Preço Máximo" min="0">
             </div>
+
+
+            <div class="barra_input">
+                <button class="btn-gostos" >Selecione seus gostos 
+                    <span class="material-symbols-outlined">stat_minus_1</span>
+                </button>
+            </div>
+
+            <dialog id="modal">
+                <div class="filtrar-gostos">
+                    <buttton class="btn-preferencia">Cinema</buttton>
+                    <buttton class="btn-preferencia">Arte</buttton>
+                    <buttton class="btn-preferencia">Música</buttton>
+                    <buttton class="btn-preferencia">Festivais</buttton>
+                    <buttton class="btn-preferencia">Esportes</buttton>
+                    <buttton class="btn-preferencia">Gastronomia</buttton>
+                    <buttton class="btn-preferencia">Teatro</buttton>
+                </div>
+                    <div class="aplicar-gostos">
+                        <button class="btn-aplicar">Aplicar</button>
+                    </div>
+            </dialog>
+
+            <div>
+                <div class="barra_input">
+                    <span class="material-symbols-outlined">calendar_month</span>
+                    <input type="date" name="data-nascimento" id="data-nascimento" placeholder="">
+                </div>
+                <label for="data-nascimento">Data de Nascimento</label>
+            </div>
+            <button class="btn-preferencia">Finalizar Cadastro</button>
         </form>
-    </div>
+        <script src="javascript/preferencias.js"></script>
 </body>
 </html>
