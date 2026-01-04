@@ -171,6 +171,7 @@ h2{
 .barra_pesquisa input:focus{
     outline: none;
 }
+/*BOTOES*/
 .btn_pesquisar{
     display: flex;
     border-radius: var(--borda-botao);

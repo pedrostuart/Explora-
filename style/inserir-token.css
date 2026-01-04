@@ -24,6 +24,7 @@ header{
     color: var(--verde);
     font-size: 2.3rem;
 }
+/*MAIN*/
 main{
     justify-content: center;
     align-items: center;
@@ -51,6 +52,7 @@ h1{
     display: flex;
     gap: 5px;
 }
+/*INPUTS*/
 .caixa-cod input{
     width: 30px;
     height: 40px;
@@ -77,6 +79,7 @@ form{
     font-size: 12px;
     font-weight: bold;
 }
+/*BOTOEões
 .btn-preferencia{
     background-color: var(--azul);
     padding: 9px 10px;

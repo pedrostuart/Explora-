@@ -32,7 +32,6 @@ main{
     justify-content: center;
 }
 /*CAIXA LOGIN*/
-
 .box-cadastro{
     box-shadow: var(--sombra);
     border-top-right-radius: var(--borda-caixa);
@@ -93,6 +92,7 @@ a{
     padding-left: 4px;
 
 }
+/*BOTÃO*/
 .btn-preferencia{
     background-color: var(--azul);
     padding: 9px 10px;

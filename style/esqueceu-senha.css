@@ -24,6 +24,7 @@ header{
     color: var(--verde);
     font-size: 2.3rem;
 }
+/*MAIN*/
 main{
     justify-content: center;
     align-items: center;
@@ -52,6 +53,7 @@ p{
     color: #696969;
     text-align: center;
 }
+/*INPUTS*/
 form {
     display: flex;
     flex-direction: column;
@@ -78,7 +80,8 @@ input{
 input:focus{
     outline: none;
 }
-.box .btn-preferencia{
+/*botões*/
+.btn-preferencia{
     background-color: var(--azul);
     padding: 9px 10px;
     border-radius: var(--borda-botao);

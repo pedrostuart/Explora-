@@ -1,7 +1,4 @@
 
-
-
-
 let finalizarCadastro = document.querySelector(".btn-finalizar")
 finalizarCadastro.addEventListener("click", CalcularIdade)
     
