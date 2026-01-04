@@ -1,27 +1,9 @@
-let btnGostos = document.querySelector(".btn-gostos")
-btnGostos.addEventListener("click", dialog)
 
-function dialog(event){
-    event.preventDefault()
-    let dialog = document.getElementById("modal")
-    dialog.style.display = 'flex'
-    dialog.style.boxShadow = '1px 1px 100px 1000px #1f1f1f54'
-}
 
-let btnAplicar = document.querySelector(".btn-aplicar")
-btnAplicar.addEventListener("click", aplicar)
-
-function aplicar(event){
-    event.preventDefault()
-    let dialog = document.getElementById("modal")
-    dialog.style.display = 'none'
-}
 
 
 let finalizarCadastro = document.querySelector(".btn-finalizar")
-
 finalizarCadastro.addEventListener("click", CalcularIdade)
-    
     
 function CalcularIdade(event){
     event.preventDefault()
@@ -40,5 +22,7 @@ function CalcularIdade(event){
     }else{
         label.innerText = 'Tudo Ok!'
         label.style.color = 'green'
+        location.href = 'index.html'
     }
+    
 }
