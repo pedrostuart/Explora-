@@ -89,4 +89,5 @@ input:focus{
 .btn-preferencia:hover{
     background-color: white;
     color: var(--azul);
+    transition: 0.25s;
 }

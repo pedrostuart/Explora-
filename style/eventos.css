@@ -16,7 +16,6 @@ main{
 
 .menu-lateral{
     border-right: 1px solid #8e8e8e;
-    border-top: 1px solid #8e8e8e;
     width: 330px;
     padding: 20px 25px 25px 25px;
     height: 100vh;
@@ -137,7 +136,6 @@ h2{
 
 /*DESCOBIR EVENTOS*/
 .descobrir-eventos{
-    border-top: 1px solid #8e8e8e;
     padding: 20px;
     width: 100%;
 }

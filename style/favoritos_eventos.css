@@ -81,6 +81,13 @@
     font-weight: bold;
     font-size: 0.9rem;
 }
+.btn-preferencia:hover{
+    background-color: white;
+    transition: 0.25s;
+    color: var(--azul);
+    cursor: pointer;
+}
+
 /*EVENTOS*/
 .linha_eventos{
     padding: 30px 20px 20px 20px;

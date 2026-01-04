@@ -89,5 +89,6 @@ form{
 }
 .btn-preferencia:hover{
     background-color: white;
+    transition: 0.25s;
     color: var(--azul);
 }

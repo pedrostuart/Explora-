@@ -93,6 +93,12 @@ a{
     cursor: pointer;
     text-decoration: none;
     margin: 0 auto;
+    
+}
+.btn-preferencia:hover{
+    background-color: white;
+    transition: 0.25s;
+    color: var(--azul);
 }
 /*LOGIN COM PLATAFORMAS*/
 .logar-plataformas{

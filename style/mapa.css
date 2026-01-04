@@ -17,7 +17,6 @@ main{
 
 .menu-lateral{
     border-right: 1px solid #8e8e8e;
-    border-top: 1px solid #8e8e8e;
     width: 322px;
     padding: 20px 25px 25px 25px;
     height: 100vh;
@@ -133,7 +132,6 @@ h2{
 /*MAPA*/
 .mapa{
     width: 100%;
-    border-top: 1px solid #8e8e8e;
     display: flex;
     position: relative;
 }
