@@ -3,9 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perdil</title>
+    <title>Perfil</title>
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/perfil.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
-    
+    <header>
+        <nav>
+        <a href="index.html"><img src="img/logo.png" alt="Logo Site"></a>
+        
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
+                <li><a href="favoritos_eventos.html">Favoritos</a></li>
+            </ul>
+        
+        <div class="botoes_cadastro">
+            <a href="login.html" id="entrar">Entrar</a>
+            <a href="cadastro.html" id="cadastrar">Cadastre-se</a>
+        </div>
+        </nav>
+    </header>
+    <main>
+        <section class="cabecalho">
+            <img src="img/perfil1.png" alt="imagem-perfil">
+            <div class="info-usuario">
+                <h1>Maria Fernanda</h1>
+                <p>Exploradora de eventos - São Paulo, SP</p>
+            </div>
+        </section>
+        <section class="navagacao">
+            <nav class="menu">
+                <button><span class="material-symbols-outlined">history</span>Atividade</button>
+                <button><span class="material-symbols-outlined" style="color: red;">favorite</span>Favoritos</button>
+                <button><span class="material-symbols-outlined">settings</span>Configurrações</button>
+            </nav>
+        </section>
+        <section class="configuracoes">
+            <div class="box-notificacao">
+                <div class="titulo-notficacao">
+                    <span class="material-symbols-outlined">notifications</span>
+                    <h2>Notificações</h2>
+                </div>
+
+                <div class="box-inputs-check">
+                    <div class="input-check">
+                        <label for="not-email">Notificações por e-mail</label>
+                        <input type="checkbox" name="not-email" id="" class="toggle-switch">
+                    </div>
+                    <div class="input-check">
+                        <label for="not-email">Alertas de eventos próximos</label>
+                        <input type="checkbox" name="not-eventos" id="" class="toggle-switch">
+                    </div>
+                    <div class="input-check">
+                        <label for="not-email">Promoções e ofertas</label>
+                        <input type="checkbox" name="not-ofertas" id="" class="toggle-switch">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="box-favoritos">
+
+            </div>
+            <div class="box-conquistas">
+
+            </div>
+        </section>
+    </main>
 </body>
 </html>

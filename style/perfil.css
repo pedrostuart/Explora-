@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,500..900&display=swap');
+:root{
+    --verde: #1A824D;
+    --azul: #2678BF;
+    --borda-caixa: 10px;
+    --sombra: 0px 1px 5px #8e8e8ead;
+    --borda-botao: 35px;
+}
+/*MAIN*/
+main{
+}
+.cabecalho{
+    background-color: #1A824D;
+    width: 94%;
+    height: 300px;
+    border-radius: var(--borda-caixa);
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+.cabecalho img{
+    margin-right: 20px;
+    width: 80px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+.info-usuario{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+/*NAVEGAÇÂO*/
+.menu{
+    border-radius: var(--borda-caixa);
+    box-shadow: var(--sombra);
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+}
+.menu button{
+    display: flex;
+    align-items: center;
+    border: 0;
+    background: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.menu button:hover{
+    color: #1A824D;
+    transition: 0.15s;
+}
+.material-symbols-outlined{
+    color: var(--verde);
+    font-size: 2.3rem;
+    margin-right: 3px;
+}
+/*CONFIGURAÇÔES*/
+.configuracoes{
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/*CAIXA NOTIFICAÇÔES*/
+.box-notificacao{
+    width: 320px;
+    box-shadow: var(--sombra);
+    border-radius: var(--borda-caixa);
+    padding: 10px;  
+    margin-bottom: auto;
+    height: 300px;
+
+}
+
+.titulo-notficacao{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.titulo-notficacao .material-symbols-outlined{
+    font-size: 1.7rem;
+}
+.box-inputs-check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+/*toggle-switch*/
+.toggle-switch{
+    width: 60px;
+    appearance: none;
+    height: 30px;
+    background-color: #8e8e8e;
+    border-radius: var(--borda-botao);
+    box-shadow: var(--sombra);
+    position: relative;
+    cursor: pointer;
+}
+.toggle-switch:checked{
+    background-color: var(--verde);
+}
+.toggle-switch::before /*BOLINHA DO BOTÂO*/{
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: var(--sombra);
+    position: absolute;
+    transform: scale(0.78);
+    transition: 0.4s;
+    left: 0;
+}
+.toggle-switch:checked::before{
+    position: absolute;
+    left: 30px;
+}
+.input-check{
+    display: flex;
+    align-items: center;
+    padding: 8px 13px;
+}
+.input-check label{
+    font-size: 1rem;
+    font-family: 'inter', sans-serif;
+    padding-right: 8px;
+    font-weight: 600;
+    
+}
+/*FAVORITOS*/
+.box-favoritos{
+    width: 70%;
+    box-shadow: var(--sombra);
+    border-radius: var(--borda-caixa);
+    padding: 10px;
+    height: 400px;
+}
+/*CONQUISTAS*/
+.box-conquistas{
+    width: 320px;
+    box-shadow: var(--sombra);
+    border-radius: var(--borda-caixa);
+    padding: 10px;
+    height: 400px;
+    
+}
