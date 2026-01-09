@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: "Inter", sans-serif;
+    
 }
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,500..900&display=swap');
 :root{
@@ -52,7 +53,6 @@
     background: none;
     font-size: 1.1rem;
     cursor: pointer;
-    font-weight: bold;
 }
 .menu button:hover{
     color: #1A824D;
@@ -75,6 +75,7 @@
     display: flex;
     flex-wrap: wrap;  
     gap: 30px;
+    
 }
 .barra-lateral{
     display: flex;
@@ -152,7 +153,7 @@
 }
 /*Historico de eventos*/
 .box-historico{
-    width: 70%;
+    width: 66%;
     box-shadow: var(--sombra);
     border-radius: var(--borda-caixa);
     padding: 36px;
@@ -196,7 +197,7 @@
 
 /*Favoritos*/
 .box-favoritos{
-    width: 70%;
+    width: 66%;
     box-shadow: var(--sombra);
     border-radius: var(--borda-caixa);
     padding: 36px;
@@ -249,7 +250,7 @@
 
 /*DADOS*/
 .box-dados{
-    width: 70%;
+    width: 66%;
     box-shadow: var(--sombra);
     border-radius: var(--borda-caixa);
     padding: 36px;
@@ -316,6 +317,7 @@
     margin: auto;
     display: flex;
     gap: 5px;
+    align-items: center;
 }
 .aplicar-preferencias i{
     color: white;
@@ -338,9 +340,21 @@
     cursor: pointer;
     font-family: Arial, Helvetica, sans-serif;
     gap: 5px;
+    align-items: center;
 }
 .salvar i{
     color: white;
+}
+.modal-salvar{
+    background-color: rgba(22, 22, 22, 0.76);
+    color: white;
+    border-radius: var(--borda-caixa);
+    box-shadow: 1px 1px 1px 1000px rgba(31, 31, 31, 0.425);
+    padding: 20px;
+    position: fixed; /* ou fixed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 /*DADOS MODAL*/
 .modal{
@@ -371,7 +385,7 @@
     display: flex;
     gap: 10px;
 }
-.modal input{
+.label-preferencias label{
     background-color: var(--azul);
     padding: 9px 10px;
     border-radius: var(--borda-botao);
@@ -384,12 +398,9 @@
     align-items: center;
     display: flex;
 }
-.modal input{
-    border: 0;
+.modal .btn-preferencia{
     width: 18px;
     height: 18px;
-    opacity: 0;
-    position: absolute;
 }
 .aplicar{
     background-color: #8e8e8e;

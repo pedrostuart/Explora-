@@ -19,7 +19,7 @@ function CalcularIdade(event){
     }else{
         label.innerText = 'Tudo Ok!'
         label.style.color = 'green'
-        location.href = 'index.html'
+        location.href = 'perfil.html'
     }
     
 }

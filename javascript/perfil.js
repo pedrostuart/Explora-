@@ -16,16 +16,25 @@ function atividade(){
     caixaHistorico.style.display = 'flex'
     caixaFavoritos.style.display = 'none'
     caixaDados.style.display = 'none'
+    btnAtividade.style.color = '#1A824D'
+    btnConfig.style.color = 'black'
+    btnFavoritos.style.color = 'black'
 }
 function favoritos(){
     caixaHistorico.style.display = 'none'
     caixaFavoritos.style.display = 'flex'
     caixaDados.style.display = 'none'
+    btnFavoritos.style.color = '#1A824D'
+    btnAtividade.style.color = 'black'
+    btnConfig.style.color = 'black'
 }
 function config(){
     caixaHistorico.style.display = 'none'
     caixaFavoritos.style.display = 'none'
     caixaDados.style.display = 'flex'
+    btnConfig.style.color = '#1A824D'
+    btnFavoritos.style.color = 'black'
+    btnAtividade.style.color = 'black'
 }
 
 /*MODAL*/
@@ -37,8 +46,6 @@ function abriModal(e){
     e.preventDefault()
     modal.style.display = 'block'
 }
-
-
 let btnAplicarModal = document.querySelector(".aplicar")
 btnAplicarModal.addEventListener("click", fecharModal)
 
@@ -46,13 +53,36 @@ function fecharModal(e){
     e.preventDefault()
     modal.style.display = 'none'
 }
-/*CHECK BOX*/
-/*let btnPreferencia = document.querySelector(".btn-preferencia")
 
-btnPreferencia.addEventListener("click", mudarCor)
-function mudarCor(){
-    if(btnPreferencia.checked){
-        let label = document.querySelector("label")
-        label.style.background = 'red'
-    }
-}*/
+
+
+
+/*CEHECKBOX*/
+
+// let btnPreferencia = document.querySelectorAll(".btn-preferencia")
+
+
+// btnPreferencia.forEach(btn =>{
+//     btn.addEventListener('click', mudarCor)
+    
+// })
+// function mudarCor(){
+//     let labels = document.querySelectorAll(".label-preferencias label")
+//     labels.forEach(label=>{
+//         label.style.backgroundColor ='red'
+//     })
+// }
+
+
+/*MODAL SALVAR*/
+let btnSalvar = document.querySelector(".salvar")
+let modalSalvar = document.querySelector(".modal-salvar")
+
+btnSalvar.addEventListener("click", modalSave)
+
+function modalSave(){
+    modalSalvar.style.display = 'flex'
+    setTimeout(()=>{
+        modalSalvar.style.display = 'none'
+    }, 1000)
+}
