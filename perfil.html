@@ -39,36 +39,59 @@
         <section class="navagacao">
             <nav class="menu">
                 <button class="btn-atividade"><span class="material-symbols-outlined ">history</span>Atividade</button>
-                <button class="btn-favoritos"><span class="material-symbols-outlined" style="color: red;">favorite</span>Favoritos</button>
-                <button class="btn-config"><span class="material-symbols-outlined">settings</span>Configurações</button>
+                <button class="btn-favoritos"><i class="bi bi-heart-fill" style="color: red;"></i></span>Favoritos</button>
+                <button class="btn-config"><i class="bi bi-gear-fill"></i>Configurações</button>
             </nav>
         </section>
         <section class="configuracao">
-            <div class="box-conquistas">
-                <div class="titulo-notficacao">
-                    <span class="material-symbols-outlined">trophy</span>
-                    <h2>Conquistas</h2>
-                    
+            <div class="barra-lateral">
+                
+                <div class="box-notificacao">
+                    <div class="titulo-notficacao">
+                        <i class="bi bi-bell-fill"></i>
+                        <h2>Notificações</h2>
+                    </div>
+                    <div class="box-inputs-check">
+                        <div class="input-check">
+                            <label for="not-email">Notificações por e-mail</label>
+                            <input type="checkbox" name="not-email" id="" class="toggle-switch">
+                        </div>
+                        <div class="input-check">
+                            <label for="not-email">Alertas de eventos próximos</label>
+                            <input type="checkbox" name="not-eventos" id="" class="toggle-switch">
+                        </div>
+                        <div class="input-check">
+                            <label for="not-email">Promoções e ofertas</label>
+                            <input type="checkbox" name="not-ofertas" id="" class="toggle-switch">
+                        </div>
+                    </div>
                 </div>
-                <div class="box-icons-conquistas">
-                    <div class="conquistas">
-                        <i class="bi bi-music-note"></i>
-                        <h3>Amante da musíca</h3>
-                        <p>5 shows assistidos</p>
+                <div class="box-conquistas">
+                    <div class="titulo-notficacao">
+                        <i class="bi bi-trophy-fill"></i>
+                        <h2>Conquistas</h2>
+                
                     </div>
-                    <div class="conquistas">
-                        <i class="bi bi-person-walking"></i>
-                        <h3>Culturado</h3>
-                        <p>1 peça de teatro</p>
-                    </div>
-                    <div class="conquistas">
-                        <i class="bi bi-fork-knife"></i>
-                        <h3>Food Lover</h3>
-                        <p>3 eventos gastronômicos</p>
+                    <div class="box-icons-conquistas">
+                        <div class="conquistas">
+                            <i class="bi bi-music-note"></i>
+                            <h3>Amante da musíca</h3>
+                            <p>5 shows assistidos</p>
+                        </div>
+                        <div class="conquistas">
+                            <i class="bi bi-person-walking"></i>
+                            <h3>Explorador</h3>
+                            <p>8 Eventos visitados</p>
+                        </div>
+                        <div class="conquistas">
+                            <i class="bi bi-fork-knife"></i>
+                            <h3>Food Lover</h3>
+                            <p>3 eventos gastronômicos</p>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
-            
             
 
 
@@ -99,8 +122,9 @@
                         <p>Exposição de Arte Moderna ⭐⭐⭐⭐⭐ </p>
                     </div>
                 </div>
+                
             </div> 
-
+            
 
 
 
@@ -235,36 +259,11 @@
                 </div>
                 <div class="preferencias">
                     <h3>Interesses</h3>
-                    <button class="aplicar-preferencias">Adicionar  <i class="bi bi-sliders"></i></button>
+                    <button class="aplicar-preferencias">Adicionar <i class="bi bi-sliders"></i></button>
                     <button class="salvar"><i class="bi bi-floppy-fill"></i>Salvar</button>
                 </div>
             </div> 
 
-
-
-
-            <div class="box-notificacao">
-                <div class="titulo-notficacao">
-                    <span class="material-symbols-outlined">notifications</span>
-                    <h2>Notificações</h2>
-                </div>
-
-                <div class="box-inputs-check">
-                    <div class="input-check">
-                        <label for="not-email">Notificações por e-mail</label>
-                        <input type="checkbox" name="not-email" id="" class="toggle-switch">
-                    </div>
-                    <div class="input-check">
-                        <label for="not-email">Alertas de eventos próximos</label>
-                        <input type="checkbox" name="not-eventos" id="" class="toggle-switch">
-                    </div>
-                    <div class="input-check">
-                        <label for="not-email">Promoções e ofertas</label>
-                        <input type="checkbox" name="not-ofertas" id="" class="toggle-switch">
-                    </div>
-                </div>
-                
-            </div>
         </section>
         <dialog class="modal">
             <h1>Selecione suas prefêrencias</h1>
@@ -272,19 +271,19 @@
             
             <div class="label-preferencias">
                 <label>
-                    <input type="checkbox" name="preferencias[]" value="cinema">
+                    <input type="checkbox" name="preferencias[]" value="cinema" class="btn-preferencia">
                     Cinema
                 </label>
                 <label>
-                    <input type="checkbox" name="preferencias[]" value="arte">
+                    <input type="checkbox" name="preferencias[]" value="arte" >
                     Arte
                 </label>
                 <label>
-                    <input type="checkbox" name="preferencias[]" value="festivais">
+                    <input type="checkbox" name="preferencias[]" value="festivais" >
                     Festivais
                 </label>
                 <label>
-                    <input type="checkbox" name="preferencias[]" value="esportes">
+                    <input type="checkbox" name="preferencias[]" value="esportes" >
                     Esportes
                 </label>
                 <label>
@@ -296,11 +295,11 @@
                     Teatro
                 </label>
                 <label>
-                    <input type="checkbox" name="preferencias[]" value="musica">
+                    <input type="checkbox" name="preferencias[]" value="musica" >
                     Música
                 </label>
             </div>
-
+            <hr>
             <button class="aplicar">Aplicar</button>
 
             
