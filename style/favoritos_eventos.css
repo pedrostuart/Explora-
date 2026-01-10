@@ -87,7 +87,29 @@
     color: var(--azul);
     cursor: pointer;
 }
-
+.preferencias{
+    display: flex;
+    flex-direction: column;
+}
+.label-preferencias{
+    flex-wrap: wrap;
+    display: flex;
+    gap: 6.5px;
+    margin: auto;
+}
+.label-preferencias label{
+    background-color: var(--azul);
+    padding: 9px 10px;
+    border-radius: var(--borda-botao);
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+    gap: 5px;
+    align-items: center;
+    display: flex;
+}
 /*EVENTOS*/
 .linha_eventos{
     padding: 30px 20px 20px 20px;

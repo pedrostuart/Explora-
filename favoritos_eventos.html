@@ -34,23 +34,47 @@
                 <h1><i class="bi-suit-heart-fill"></i> Eventos Salvos</h1>
                 <p>Evento que você salvou para ver depois.</p>
             </div>
-            <div class="barra_pesquisa">
-                    <input type="text"  placeholder="Buscar eventos, locais, categorias...">
+            <form class="barra_pesquisa">
+                <input type="text"  placeholder="Buscar eventos, locais, categorias...">
                 
-                    <a class="btn_pesquisar">
-                        <i class="bi bi-search"></i>
-                        Pesquisar
-                    </a>
-                </div>
-            <div class="filtrar-gostos">
-                    <buttton class="btn-preferencia">Cinema</buttton>
-                    <buttton class="btn-preferencia">Arte</buttton>
-                    <buttton class="btn-preferencia">Música</buttton>
-                    <buttton class="btn-preferencia">Festivais</buttton>
-                    <buttton class="btn-preferencia">Esportes</buttton>
-                    <buttton class="btn-preferencia">Gastronomia</buttton>
-                    <buttton class="btn-preferencia">Teatro</buttton>
+                <a class="btn_pesquisar">
+                    <i class="bi bi-search"></i>
+                    Pesquisar
+                </a>
+            </form>
+            <form class="preferencias">
+            
+            <div class="label-preferencias">
+                <label>
+                    <input type="checkbox" name="preferencias[]" value="cinema" class="btn-preferencia">
+                    Cinema
+                </label>
+                <label>
+                    <input type="checkbox" name="preferencias[]" value="arte" class="btn-preferencia">
+                    Arte
+                </label>
+                <label>
+                    <input type="checkbox" name="preferencias[]" value="festivais" class="btn-preferencia">
+                    Festivais
+                </label>
+                <label>
+                    <input type="checkbox" name="preferencias[]" value="esportes" class="btn-preferencia">
+                    Esportes
+                </label>
+                <label>
+                    <input type="checkbox" name="preferencias[]" value="gastronomia" class="btn-preferencia">
+                    Gastronomia
+                </label>
+                <label>
+                    <input type="checkbox" name="preferencias[]" value="teatro" class="btn-preferencia">
+                    Teatro
+                </label>
+                <label>
+                    <input type="checkbox" name="preferencias[]" value="musica" class="btn-preferencia">
+                    Música
+                </label>
             </div>
+            </form>
             <div class="linha_eventos">
                 <div class="caixa_eventos">
                     <a href="informação_evento.html">

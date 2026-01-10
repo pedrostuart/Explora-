@@ -79,7 +79,7 @@ form{
     font-size: 12px;
     font-weight: bold;
 }
-/*BOTOEões
+/*BOTOEões*/
 .btn-preferencia{
     background-color: var(--azul);
     padding: 9px 10px;
@@ -89,6 +89,8 @@ form{
     font-weight: bold;
     font-size: 0.9rem;
     cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 .btn-preferencia:hover{
     background-color: white;

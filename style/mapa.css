@@ -49,8 +49,8 @@ h2{
     display: flex;
     align-items: center;
     font-weight: bold;
+    text-decoration: none;
 }
-
 
 /*MENU LATERAL (DATA)*/
 
@@ -99,10 +99,11 @@ h2{
     font-weight: bolder;
     
 }
-.orcamento .bi-cash{
+.orcamento .material-symbols-outlined{
     padding-left: 8px;
     color: var(--verde);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+
 }
 .orcamento input{
     border-radius: var(--borda-botao);
