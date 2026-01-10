@@ -23,3 +23,19 @@ function CalcularIdade(event){
     }
     
 }
+/*DIALOG*/
+let btnEscolherPreferencias = document.querySelector(".aplicar-preferencias")
+let modal = document.querySelector(".modal")
+btnEscolherPreferencias.addEventListener("click", abriModal)
+
+function abriModal(e){
+    e.preventDefault()
+    modal.style.display = 'block'
+}
+let btnAplicarModal = document.querySelector(".aplicar")
+btnAplicarModal.addEventListener("click", fecharModal)
+
+function fecharModal(e){
+    e.preventDefault()
+    modal.style.display = 'none'
+}

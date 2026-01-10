@@ -10,6 +10,9 @@
     --sombra: 0px 1px 5px #8e8e8ead;
     --borda-botao: 35px;
 }
+body, html{
+    height: 100%;
+}
 header{
     display: flex;
     align-items: center;
@@ -23,6 +26,13 @@ header img{
     margin: auto;
 }
 /*MAIN*/
+main{
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 80%;
+}
 .caixa-geral{
     display: flex;
     align-items: center;

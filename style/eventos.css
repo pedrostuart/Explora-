@@ -41,10 +41,27 @@ h2{
     font-size: 0.9rem;
     cursor: pointer;
 }
-.btn-preferencia.ativo{
-    outline: none;
-    background-color: white;
-    color: var(--azul);
+.preferencias{
+    display: flex;
+    flex-direction: column;
+}
+.label-preferencias{
+    flex-wrap: wrap;
+    display: flex;
+    gap: 6.5px;
+}
+.label-preferencias label{
+    background-color: var(--azul);
+    padding: 9px 10px;
+    border-radius: var(--borda-botao);
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+    gap: 5px;
+    align-items: center;
+    display: flex;
 }
 /*MENU LATERAL (LINK)*/
 
@@ -102,10 +119,11 @@ h2{
     font-weight: bolder;
     
 }
-.orcamento .bi-cash{
+.orcamento .material-symbols-outlined{
     padding-left: 8px;
     color: var(--verde);
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+
 }
 .orcamento input{
     border-radius: var(--borda-botao);
@@ -148,7 +166,7 @@ h2{
     border-radius: var(--borda-botao);
     display: flex;
     box-shadow: var(--sombra);
-    margin: auto;
+    margin: 20px auto;
 }
 
 .barra_pesquisa input{

@@ -10,6 +10,9 @@
     --sombra: 0px 1px 5px #8e8e8ead;
     --borda-botao: 35px;
 }
+body, html{
+    height: 100%;
+}
 header{
     display: flex;
     align-items: center;
@@ -22,10 +25,15 @@ header .bi-arrow-left-circle-fill{
 header img{
     margin: auto;
 }
-main{
-    height: 100%;
-}
+
 /*MAIN*/
+main{
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 80%;
+}
 .caixa-geral{
     display: flex;
     align-items: center;

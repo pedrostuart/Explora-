@@ -171,6 +171,7 @@
     color: white;
     padding: 10px 12px;
     text-align: center;
+    cursor: pointer;
 }
 #ingressos button:hover{
     border: 1px solid var(--azul);

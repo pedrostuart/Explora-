@@ -33,15 +33,33 @@
         <section class="menu-lateral">
             <a href="mapa.html"><span class="material-symbols-outlined">map_search</span>Visualizar Mapa</a>
             
-            <div>
-                <h2>Data</h2>
-                <div class="filtrar-data">
-                    <buttton class="btn-preferencia">Hoje</buttton>
-                    <buttton class="btn-preferencia">Amanhã</buttton>
-                    <buttton class="btn-preferencia">Essa Semana</buttton>
-                    <buttton class="btn-preferencia">Esse Mês</buttton>
-                </div>
+            <form class="preferencias">
+             <h2>Data</h2>   
+            <div class="label-preferencias">
+                
+                <label >
+                    <input type="checkbox" name="preferencias[]" value="cinema" >
+                    Hoje
+                </label>
+                <label>
+                    <input type="checkbox" name="preferencias[]" value="arte" >
+                    Amanhã
+                </label>
+                <label >
+                    <input type="checkbox" name="preferencias[]" value="festivais" >
+                    Esta Semana
+                </label>
+                <label >
+                    <input type="checkbox" name="preferencias[]" value="esportes" >
+                    Este Mês
+                </label>
+                <label >
+                    <input type="checkbox" name="preferencias[]" value="gastronomia" >
+                    Este Ano
+                </label>
+                
             </div>
+            </form>
             <div class="filtrar-distancia">
                 <h2>Distância</h2>
                 <div>
@@ -76,31 +94,57 @@
                     <input type="number" name="preco" id="preco" placeholder="Preço Máximo" min="0">
                 </div>
             </div>
-            <div>
-                <h2>Preferências</h2>
-                <div class="filtrar-gostos">
-                    <buttton class="btn-preferencia">Cinema</buttton>
-                    <buttton class="btn-preferencia">Arte</buttton>
-                    <buttton class="btn-preferencia">Música</buttton>
-                    <buttton class="btn-preferencia">Festivais</buttton>
-                    <buttton class="btn-preferencia">Esportes</buttton>
-                    <buttton class="btn-preferencia">Gastronomia</buttton>
-                    <buttton class="btn-preferencia">Teatro</buttton>
-                </div>
+            
+            <form class="preferencias">
+             <h2>Preferencias</h2>   
+            <div class="label-preferencias">
+                
+                <label >
+                    <input type="checkbox" name="preferencias[]" value="cinema" >
+                    Cinema
+                </label>
+                <label>
+                    <input type="checkbox" name="preferencias[]" value="arte" >
+                    Arte
+                </label>
+                <label >
+                    <input type="checkbox" name="preferencias[]" value="festivais" >
+                    Festivais
+                </label>
+                <label >
+                    <input type="checkbox" name="preferencias[]" value="esportes" >
+                    Esportes
+                </label>
+                <label >
+                    <input type="checkbox" name="preferencias[]" value="gastronomia" >
+                    Gastronomia
+                </label>
+                <label>
+                    <input type="checkbox" name="preferencias[]" value="teatro">
+                    Teatro
+                </label>
+                <label>
+                    <input type="checkbox" name="preferencias[]" value="musica" >
+                    Música
+                </label>
             </div>
+            </form>
+            
+            <hr>
+
             <div class="btn-filtrar">
                 <button class="btn-preferencia">Filtrar<i class="bi bi-funnel-fill"></i></button>
             </div>
         </section>
         <section class="descobrir-eventos">
-            <div class="barra_pesquisa">
-                <input type="text"  placeholder="Buscar eventos, locais, categorias...">
+            <form class="barra_pesquisa">
+                    <input type="text"  placeholder="Buscar eventos, locais, categorias...">
                 
-                <a class="btn_pesquisar">
-                    <i class="bi bi-search"></i>
-                    Pesquisar
-                </a>
-            </div>
+                    <button class="btn_pesquisar">
+                        <i class="bi bi-search"></i>
+                        Pesquisar
+                    </button>
+                </form>
             
             <div class="linha_eventos">
                 <div class="caixa_eventos">
