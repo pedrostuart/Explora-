@@ -71,6 +71,10 @@ input:focus{
     display: flex;
     gap: 20px;
     justify-content: center;
+
+    max-width: 1400px;
+    margin: auto;
+    flex-wrap: wrap;
     
 }
 .eventos_destaque h1{
@@ -127,4 +131,49 @@ input:focus{
 .caixa_eventos .distancia_show{
     color: #8e8e8e;
     font-size: 0.7rem;
+}
+
+/*CARROSEL EVENTOS*/
+.carrosel-eventos{
+    width: 400px;
+    height: 244px;
+    border: 2px solid var(--verde);
+    border-radius: 14px;
+    font-weight: bold;
+    box-shadow: 5px 5px 10px #8e8e8e;
+    margin: auto;
+}
+.carrosel-eventos a img{
+    width: 400px;
+    height: 165px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+.carrosel-eventos .nome_show, .distancia_show{
+    padding-left: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+.carrosel-eventos .distancia_show{
+    color: #8e8e8e;
+    font-size: 0.85rem;
+}
+/*LINHA EVENTOS*/
+@media screen and (max-width: 1094px){
+    .caixa_eventos{
+        width: 200px;
+        height: 180px;
+    }
+    .caixa_eventos a img{
+        width: 200px;
+        height: 120px;
+    }
+    .caixa_eventos .data_evento{
+        font-size: 0.75rem;
+        letter-spacing: 0.2px;
+        font-weight: bold;
+    }
+}
+@media screen and (max-width: 706px){
+
 }
