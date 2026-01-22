@@ -126,11 +126,11 @@ a{
 }
 /*CAIXA VERDE*/
 @keyframes transicao{
-    0%{
+    from{
         border-radius: var(--borda-caixa);
         width: 355px;
     }
-    100%{
+    to{
         transform: translateX(352px);
         border-top-right-radius: var(--borda-caixa);
         border-bottom-right-radius: var(--borda-caixa);
