@@ -11,6 +11,8 @@
     --borda-botao: 35px;
 }
 /*MAIN*/
+main{
+}
 /*CARROSEL*/
 .carrosel{
     background: url(/img/carrosel_tela_inicial.png) no-repeat center;
@@ -38,11 +40,11 @@
 }
 input{
     width: 500px;
-    margin: auto;
     height: 100%;
     border-bottom-left-radius: 33px;
     border-top-left-radius: 33px;
     border: 0;
+    margin-left: 20px;
 }
 input:focus{
     outline: none;
@@ -77,6 +79,7 @@ input:focus{
     flex-wrap: wrap;
     
 }
+
 .eventos_destaque h1{
     text-align: center;
     padding: 20px;
@@ -134,6 +137,31 @@ input:focus{
 }
 
 /*CARROSEL EVENTOS*/
+.carrosel-container{
+    display: none;
+}
+.carrosel-viewport{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.carrosel-viewport button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.carrosel-viewport button:hover{
+    transform: translateY(-3px);
+    transition: 0.5s;
+}
+.carrosel-viewport i{
+    font-size: 2.5rem;
+    color: var(--verde);
+    font-weight: bolder;
+}
+
 .carrosel-eventos{
     width: 400px;
     height: 244px;
@@ -141,22 +169,70 @@ input:focus{
     border-radius: 14px;
     font-weight: bold;
     box-shadow: 5px 5px 10px #8e8e8e;
-    margin: auto;
 }
 .carrosel-eventos a img{
     width: 400px;
-    height: 165px;
+    height: 175px;
     border-top-left-radius: 14px;
     border-top-right-radius: 14px;
 }
 .carrosel-eventos .nome_show, .distancia_show{
-    padding-left: 10px;
-    padding-top: 10px;
+    padding-left: 8.5px;
+    padding-top: 8.5px;
     font-weight: bold;
 }
 .carrosel-eventos .distancia_show{
     color: #8e8e8e;
     font-size: 0.85rem;
+}
+.carrossel-indicadores{
+    justify-content: center;
+    display: flex;
+    gap: 8px;
+    margin-top: 15px;
+}
+.carrossel-indicadores button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: #555;
+}
+.carrossel-indicadores .ativo{
+    background-color: white;
+    border: 1px solid black;
+}
+/*BARRA PESQUISA*/
+@media screen and (max-width: 770px){
+    .carrosel .barra_pesquisa{
+        width: 550px;
+    }
+}
+@media screen and (max-width: 625px){
+    .carrosel .barra_pesquisa{
+        width: 450px;
+        height: 54px;
+    }
+    .btn_pesquisar{
+        padding: 10px;
+        font-size: 0.75rem;
+    }
+}
+@media screen and (max-width: 510px){
+    .carrosel .barra_pesquisa{
+        width: 350px;
+    }
+    .btn_pesquisar{
+        margin-right: 10px;
+    }
+    input{
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 400px){
+    .carrosel .barra_pesquisa{
+        width: 300px;
+    }
 }
 /*LINHA EVENTOS*/
 @media screen and (max-width: 1094px){
@@ -175,5 +251,17 @@ input:focus{
     }
 }
 @media screen and (max-width: 706px){
+    .carrosel-container{
+        display: block;
+    }
+    .linha_eventos{
+        display: none;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        gap: 140px;
+    }
+    
 
 }
