@@ -2,121 +2,125 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<title>Painel do Usuário</title>
+<title>Carrossel Teste</title>
 
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
 body {
-    background: #f2f2f2;
-}
-
-/* TOPO */
-.topo {
-    background: #1a8f5a;
-    color: white;
-    padding: 20px;
-}
-
-.menu {
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #fff;
     display: flex;
-    gap: 10px;
-    margin-top: 15px;
+    justify-content: center;
+    padding: 40px;
 }
 
-.menu button {
-    padding: 8px 15px;
+/* ===== CARROSSEL ===== */
+.carrossel {
+    width: 300px;
+}
+
+/* área visível */
+.carrossel-viewport {
+    overflow: hidden;
+}
+
+/* trilho que desliza */
+.carrossel-track {
+    display: flex;
+    transition: transform 0.4s ease;
+}
+
+/* slide */
+.carrosel-eventos {
+    min-width: 300px;
+    padding: 10px;
+}
+
+.carrosel-eventos img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.data_evento {
+    background: red;
+    padding: 4px 8px;
+    font-size: 12px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+/* ===== INDICADORES ===== */
+.carrossel-indicadores {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.carrossel-indicadores button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
     border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    font-weight: bold;
+    background: #555;
 }
 
-.menu button.ativo {
-    background: white;
-    color: #1a8f5a;
-}
-
-/* CONTEÚDO */
-.conteudo {
-    padding: 20px;
-}
-
-/* SEÇÕES */
-.secao {
-    display: none;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.secao.ativa {
-    display: block;
+.carrossel-indicadores .ativo {
+    background: #fff;
 }
 </style>
 </head>
 
 <body>
 
-<!-- TOPO FIXO -->
-<div class="topo">
-    <h2>Maria Fernanda</h2>
-    <p>Exploradora de eventos • São Paulo, SP</p>
+<div class="carrossel">
 
-    <div class="menu">
-        <button onclick="mostrar('atividade')" class="ativo">Atividade</button>
-        <button onclick="mostrar('favoritos')">Favoritos</button>
-        <button onclick="mostrar('config')">Configurações</button>
-    </div>
-</div>
+    <div class="carrossel-viewport">
+        <div class="carrossel-track" id="track">
 
-<!-- CONTEÚDO DINÂMICO -->
-<div class="conteudo">
+            <div class="carrosel-eventos">
+                <span class="data_evento">HOJE</span>
+                <img src="https://via.placeholder.com/300x180">
+                <p>The Weekend</p>
+            </div>
 
-    <div id="atividade" class="secao ativa">
-        <h3>Atividades Recentes</h3>
-        <p>✔ Evento favoritado</p>
-        <p>✔ Ingresso comprado</p>
-        <p>✔ Avaliação enviada</p>
-    </div>
+            <div class="carrosel-eventos">
+                <span class="data_evento">AMANHÃ</span>
+                <img src="https://via.placeholder.com/300x180/333">
+                <p>Coldplay</p>
+            </div>
 
-    <div id="favoritos" class="secao">
-        <h3>Favoritos</h3>
-        <p>❤️ The Weeknd</p>
-        <p>❤️ Festival de Verão</p>
+            <div class="carrosel-eventos">
+                <span class="data_evento">SEXTA</span>
+                <img src="https://via.placeholder.com/300x180/666">
+                <p>Imagine Dragons</p>
+            </div>
+
+        </div>
     </div>
 
-    <div id="config" class="secao">
-        <h3>Configurações</h3>
-        <p>🔔 Notificações</p>
-        <p>📧 E-mail</p>
-        <p>🔒 Privacidade</p>
+    <div class="carrossel-indicadores" id="indicadores">
+        <button class="ativo"></button>
+        <button></button>
+        <button></button>
     </div>
 
 </div>
 
 <script>
-function mostrar(id) {
-    // esconder todas
-    document.querySelectorAll('.secao').forEach(secao => {
-        secao.classList.remove('ativa');
-    });
+let index = 0
+const track = document.getElementById("track")
+const indicadores = document.querySelectorAll("#indicadores button")
 
-    // mostrar a clicada
-    document.getElementById(id).classList.add('ativa');
+setInterval(() => {
+    index++
+    if (index > 2) index = 0
 
-    // botão ativo
-    document.querySelectorAll('.menu button').forEach(btn => {
-        btn.classList.remove('ativo');
-    });
+    track.style.transform = `translateX(-${index * 300}px)`
 
-    event.target.classList.add('ativo');
-}
+    indicadores.forEach(btn => btn.classList.remove("ativo"))
+    indicadores[index].classList.add("ativo")
+}, 3000)
 </script>
 
 </body>
