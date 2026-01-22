@@ -90,12 +90,15 @@
 .preferencias{
     display: flex;
     flex-direction: column;
+    padding: 20px;
+    
 }
 .label-preferencias{
     flex-wrap: wrap;
     display: flex;
     gap: 6.5px;
     margin: auto;
+    justify-content: center;
 }
 .label-preferencias label{
     background-color: var(--azul);
@@ -166,4 +169,34 @@
 .caixa_eventos .distancia_show{
     color: #8e8e8e;
     font-size: 0.7rem;
+}
+@media screen and (max-width: 564px){
+    .caixa_eventos{
+        width: 381px;
+        height: 214px
+    }
+    .caixa_eventos a img{
+    width: 381px;
+    height: 145px;
+}
+}
+@media screen and (max-width: 440px){
+    .caixa_eventos{
+        width: 321px;
+        height: 214px
+    }
+    .caixa_eventos a img{
+        width: 321px;
+        height: 145px;
+}
+}
+@media screen and (max-width: 390px){
+    .caixa_eventos{
+        width: 271px;
+        height: 194px
+    }
+    .caixa_eventos a img{
+        width: 271px;
+        height: 135px;
+}
 }
