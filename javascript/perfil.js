@@ -1,41 +1,36 @@
 /*ABRIR E FECHAR CAIXAS*/
 
-let btnAtividade = document.querySelector(".btn-atividade")
-let btnFavoritos = document.querySelector(".btn-favoritos")
-let btnConfig = document.querySelector(".btn-config")
+const botoes = document.querySelectorAll(".btn-atividade, .btn-favoritos, .btn-config")
+const caixas = document.querySelectorAll(".box-historico, .box-favoritos, .box-dados")
 
-let caixaHistorico = document.querySelector(".box-historico")
-let caixaFavoritos = document.querySelector(".box-favoritos")
-let caixaDados = document.querySelector(".box-dados")
+function corTexto(){
+    botoes.forEach(btn => btn.style.color = 'black')
+}
+function boxSome(){
+    caixas.forEach(box => box.style.display = 'none')
+}
+/*CAIXA E BOTÃO (ATIVIDADE)*/
+botoes[0].addEventListener("click", () =>{
+    corTexto() 
+    botoes[0].style.color = '#1A824D'
+    boxSome()
+    caixas[0].style.display = 'flex'
+})
+/*CAIXA E BOTÃO (FAVORITOS)*/
+botoes[1].addEventListener("click", () =>{
+    corTexto() 
+    botoes[1].style.color = '#1A824D'
+    boxSome()
+    caixas[1].style.display = 'flex'
+})
+/*CAIXA E BOTÃO (DADOS)*/
+botoes[2].addEventListener("click", () =>{
+    corTexto() 
+    botoes[2].style.color = '#1A824D'
+    boxSome()
+    caixas[2].style.display = 'flex'
+})
 
-btnAtividade.addEventListener("click", atividade)
-btnFavoritos.addEventListener("click", favoritos)
-btnConfig.addEventListener("click", config)
-
-function atividade(){
-    caixaHistorico.style.display = 'flex'
-    caixaFavoritos.style.display = 'none'
-    caixaDados.style.display = 'none'
-    btnAtividade.style.color = '#1A824D'
-    btnConfig.style.color = 'black'
-    btnFavoritos.style.color = 'black'
-}
-function favoritos(){
-    caixaHistorico.style.display = 'none'
-    caixaFavoritos.style.display = 'flex'
-    caixaDados.style.display = 'none'
-    btnFavoritos.style.color = '#1A824D'
-    btnAtividade.style.color = 'black'
-    btnConfig.style.color = 'black'
-}
-function config(){
-    caixaHistorico.style.display = 'none'
-    caixaFavoritos.style.display = 'none'
-    caixaDados.style.display = 'flex'
-    btnConfig.style.color = '#1A824D'
-    btnFavoritos.style.color = 'black'
-    btnAtividade.style.color = 'black'
-}
 
 /*MODAL*/
 let btnEscolherPreferencias = document.querySelector(".aplicar-preferencias")
