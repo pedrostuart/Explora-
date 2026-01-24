@@ -65,6 +65,7 @@ input:focus{
     color: white;
     
 }
+
 /*EVENTOS EM DESTAQUE E PRÓXIMOS*/
 .linha_eventos{
     padding: 20px;
@@ -160,7 +161,6 @@ input:focus{
     color: var(--verde);
     font-weight: bolder;
 }
-
 .carrosel-eventos{
     width: 400px;
     height: 244px;
@@ -254,6 +254,9 @@ input:focus{
             letter-spacing: 0.2px;
             font-weight: bold;
         }
+        .data_evento{
+            
+        }
 }
 @media screen and (max-width: 706px){
     .carrosel-container{
@@ -283,12 +286,18 @@ input:focus{
     .carrosel-viewport{
         gap: 3px;
     }
+    .nome_show, .distancia_show{
+        padding-top: 5px;
+    }
 }
 @media screen and (max-width: 380px){
     .carrosel-eventos{
-        height: 174px;
+        height: 184px;
     }
     .carrosel-eventos a img{
-        height: 110px;
+        height: 125px;
+    }
+    .nome_show, .distancia_show{
+        padding-top: 2.5px;
     }
 }
