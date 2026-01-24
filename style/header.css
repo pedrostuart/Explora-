@@ -117,7 +117,7 @@ header .botoes_cadastro{
     flex-direction: column;
     gap: 200px;
     display: flex;
-    margin: auto;
+    margin: 0px auto;
 }
 .barra-lateral-header ul{
     list-style: none;
