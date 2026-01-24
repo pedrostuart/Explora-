@@ -11,22 +11,45 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
+    <section class="barra-lateral-header">
+        
+        <nav>
+            <div class="fechar-logo">
+                <img src="img/logo.png" alt="Logo Site">
+                <button class="fechar-menu"><i class="bi bi-x"></i></button>
+            </div>
+            
+            <ul>
+                <li> <a href="index.html"><i class="bi bi-house-fill"></i> Início</a></li>
+                <li> <a href="eventos.html"><i class="bi bi-calendar-event-fill"></i> Eventos</a></li>
+                <li> <a href="mapa.html"><i class="bi bi-map-fill"></i> Mapa</a></li>
+                <li> <a href="favoritos_eventos.html"><i class="bi bi-heart-fill"></i> Favoritos</a></li>
+            </ul>
+            <div class="botoes_cadastro">
+                <a href="login.html" id="entrar">Entrar</a>
+                <a href="cadastro.html" id="cadastrar">Cadastre-se</a>
+            </div>  
+        </nav>
+        
+    </section>
     <header>
         <nav>
-        <a href="index.html"><img src="img/logo.png" alt="Logo Site"></a>
-        
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="eventos.html">Eventos</a></li>
-                <li><a href="mapa.html">Mapa</a></li>
-                <li><a href="favoritos_eventos.html">Favoritos</a></li>
-            </ul>
-        
+        <div class="menu-logo">
+            <button class="hamburguer"><i class="bi bi-list"></i></button>
+            <a href="index.html"><img src="img/logo.png" alt="Logo Site"></a>
+        </div>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="mapa.html">Mapa</a></li>
+            <li><a href="favoritos_eventos.html">Favoritos</a></li>
+        </ul>
         <div class="botoes_cadastro">
             <a href="login.html" id="entrar">Entrar</a>
             <a href="cadastro.html" id="cadastrar">Cadastre-se</a>
         </div>
         </nav>
+        
     </header>
     <main>
         <section class="cabecalho">
@@ -36,11 +59,17 @@
                 <p>Exploradora de eventos - São Paulo, SP</p>
             </div>
         </section>
-        <section class="navagacao">
+        <section class="navegacao">
             <nav class="menu">
-                <button class="btn-atividade" style="color: #1A824D;"><span class="material-symbols-outlined ">history</span>Atividade</button>
-                <button class="btn-favoritos"><i class="bi bi-heart-fill" style="color: red;"></i></span>Favoritos</button>
-                <button class="btn-config"><i class="bi bi-gear-fill"></i>Configurações</button>
+                <button class="btn-atividade" style="color: #1A824D;">
+                    <i class="bi bi-clock-history"></i>Atividade
+                </button>
+                <button class="btn-favoritos">
+                    <i class="bi bi-heart-fill" style="color: red;"></i></span>Favoritos
+                </button>
+                <button class="btn-config">
+                    <i class="bi bi-gear-fill"></i>Configurações
+                </button>
             </nav>
         </section>
         <section class="configuracao">
@@ -115,7 +144,20 @@
                         <p>Você curitu um show nessa semana</p>
                     </div>
                 </div>
-                
+                <div class="info-recentes">
+                    <i class="bi bi-star-fill"></i>
+                    <div>
+                        <h3>Lugar visitado</h3>
+                        <p>Você curitu um show nessa semana</p>
+                    </div>
+                </div>
+                <div class="info-recentes">
+                    <i class="bi bi-star-fill"></i>
+                    <div>
+                        <h3>Lugar visitado</h3>
+                        <p>Você curitu um show nessa semana</p>
+                    </div>
+                </div>
             </div> 
             
 
@@ -301,7 +343,7 @@
             
         </dialog>
     </main>
-
+    <script src="javascript/menu.js"></script>
     <script src="javascript/perfil.js"></script>
 </body>
 </html>

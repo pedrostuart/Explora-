@@ -1,5 +1,4 @@
 /*ABRIR E FECHAR CAIXAS*/
-
 const botoes = document.querySelectorAll(".btn-atividade, .btn-favoritos, .btn-config")
 const caixas = document.querySelectorAll(".box-historico, .box-favoritos, .box-dados")
 

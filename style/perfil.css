@@ -15,13 +15,13 @@
 /*MAIN*/
 .cabecalho{
     background-color: #1A824D;
-    width: 94%;
+    max-width: 94%;
     height: 300px;
     border-radius: var(--borda-caixa);
-    margin: 30px auto;
+    margin: 30px 40px;
     display: flex;
     align-items: center;
-    padding-left: 40px;
+    padding: 0px 40px 0px 40px;
 }
 .cabecalho img{
     margin-right: 50px;
@@ -37,14 +37,20 @@
 .info-usuario p{
     text-decoration: underline;
     font-size: 1.21rem;
+    text-align: left;
 }
 /*NAVEGAÇÂO*/
+.navegacao{
+    justify-content: center;
+    display: flex;
+}
 .menu{
     border-radius: var(--borda-caixa);
     box-shadow: var(--sombra);
-    width: 50%;
-    margin: auto;
+    gap: 70px;
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 .menu button{
     display: flex;
@@ -64,7 +70,7 @@
     margin-right: 3px;
 
 }
- i{
+main i{
     color: var(--verde);
     font-size: 1.2rem;
     margin-right: 7px;
@@ -72,10 +78,9 @@
 /*CONFIGURAÇÔES*/
 .configuracao{
     padding: 40px;
-    display: flex;
-    flex-wrap: wrap;  
+    display: flex;  
     gap: 30px;
-    
+    justify-content: center;
 }
 .barra-lateral{
     display: flex;
@@ -90,6 +95,7 @@
     padding: 10px;  
     height: 300px;
     background-color: white;
+    display: none;
 }
 
 .titulo-notficacao{
@@ -153,7 +159,8 @@
 }
 /*Historico de eventos*/
 .box-historico{
-    width: 66%;
+    width: 70%;
+    min-width: 320px;
     box-shadow: var(--sombra);
     border-radius: var(--borda-caixa);
     padding: 36px;
@@ -163,6 +170,7 @@
     gap: 20px;
     max-height: 740px;
     overflow: auto;
+    
 }    
 .titulo-atividade{
     display: flex;
@@ -179,6 +187,7 @@
     min-height: 100px;
     align-items: center;
     display: flex;
+    margin: 0 auto;
 }
 .info-recentes p{
     text-align: left;
@@ -429,6 +438,7 @@
     overflow: auto;
     flex-direction: column;
     max-height: 418px;
+    display: none;
 }
 .box-icons-conquistas{
     display: flex;
@@ -459,4 +469,122 @@
 .conquistas h3, p{
     text-align: center;
 }
-/*FAVORITOS*/
+
+/*RESPONSIVIDADE */
+
+/*CARROSEL*/
+@media screen and (max-width: 674px){
+    .cabecalho{
+        height: 230px;
+        margin: 30px 15px;
+    }
+    .cabecalho h1{
+        font-size: 1.6rem;
+    }
+    .cabecalho p{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 460px){
+    .cabecalho{
+        height:190px;
+        margin: 30px 12px;
+    }
+    .cabecalho{
+        padding: 0px 20px 0px 20px;
+    }
+    .cabecalho img{
+        margin: 0px 20px 0px 0px;
+    }
+}
+@media screen and (max-width: 420px){
+    .cabecalho h1{
+        font-size: 1.4rem;
+    }
+    .cabecalho p{
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 372px){
+    .cabecalho{
+        height:170px;
+        margin: 30px 7px;
+        padding: 0px 10px 0px 10px;    
+    }
+    .cabecalho img{
+        margin: 0px 10px 0px 0px;
+    }
+}
+/*NAVEGAÇÃO*/
+@media screen and (max-width: 860px){
+    .menu{
+        gap: 45px;
+        padding: 13px;
+    }
+    .menu button i{
+        padding: 5px;
+        margin: 0;
+    }
+    .menu button i:hover{
+        background-color: #1a824c88;
+        border-radius: var(--borda-caixa);
+        padding: 5px;
+    }
+}
+@media screen and (max-width: 610px){
+    .menu{
+        gap: 45px;
+        padding: 15px;
+    }
+}
+@media screen and (max-width: 524px){
+    .menu{
+        gap: 25px;
+        padding: 10px;
+    }
+    .menu button{
+        font-size: 0.9rem;
+        font-weight: bold;
+    }
+}
+@media screen and (max-width: 440px){
+    .menu{
+        gap: 17px;
+    }
+    .menu button{
+        font-size: 0.7rem;
+    }
+
+    
+}
+/*MAIN*/
+@media screen and (max-width: 860px){
+    .box-historico{
+        max-height: 346px;
+    }
+}
+@media screen and (max-width: 480px){
+    .box-historico{
+        padding: 16px;
+    }
+    .configuracao{
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 390px){
+    .box-historico {
+        padding: 16px 0px;
+    }
+    .box-historico .info-recentes{
+        min-height: 60px;
+        padding: 6px 0px;
+        width: 90%;
+    }
+    .info-recentes h3{
+        font-size: 1rem;
+    }
+    .info-recentes i{
+        margin: 0px 10px 0px 10px;
+    }
+    
+}
