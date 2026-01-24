@@ -115,7 +115,7 @@ header .botoes_cadastro{
 }
 .barra-lateral-header nav{
     flex-direction: column;
-    gap: 200px;
+    justify-content: space-between;
     display: flex;
     margin: 0px auto;
 }
