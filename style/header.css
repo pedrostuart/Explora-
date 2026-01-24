@@ -14,7 +14,7 @@ header{
     background-color: rgb(255, 255, 255);
     border-bottom: 1px solid #8e8e8e;
 }
-nav{
+header nav{
     display: flex;
     justify-content: space-between; 
     padding: 10px;
@@ -36,6 +36,7 @@ header a:hover{
     text-decoration: underline;
     cursor: pointer;
 }
+
 .botoes_cadastro{
     align-items: center;
     display: flex;
@@ -70,4 +71,76 @@ header a:hover{
     border: 1px solid var(--verde);
     color: var(--verde);
     text-decoration: underline;
+}
+.menu-logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.hamburguer{
+    background: none;
+    border: 0;
+    display: none;
+    cursor: pointer;
+}
+.hamburguer i{
+    font-size: 2rem;
+    
+}
+/*HEADER*/
+@media screen and (max-width: 780px){
+    header ul{
+        gap: 15px;
+    }
+    .botoes_cadastro{
+        gap: 10px;
+    }
+}
+@media screen and (max-width: 685px){
+    header ul{
+        display: none;
+    }
+    .botoes_cadastro{
+        gap: 20px;
+    }
+    header a img{
+        width: 110px;
+    }
+    .hamburguer{
+        display: block;
+}
+}
+@media screen and (max-width: 508px){
+    .botoes_cadastro{
+        gap: 10px;
+    }
+}
+@media screen and (max-width: 408px){
+    #entrar{
+        padding: 7px 10px;
+        font-size: 0.85rem;
+    }
+    #cadastrar{
+        padding: 7px 10px;
+        font-size: 0.85rem;
+    }
+    header nav{
+        padding: 4px;
+    }
+    .botoes_cadastro{
+        gap: 5px;
+    }
+}
+@media screen and (max-width: 352px){
+    .menu-logo{
+    gap: 0px;
+    }
+    .hamburguer i{
+    font-size: 1.7rem;
+    
+    }
+    header a img{
+        width: 95px;
+    }
+
 }

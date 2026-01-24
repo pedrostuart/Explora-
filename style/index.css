@@ -11,14 +11,11 @@
     --borda-botao: 35px;
 }
 /*MAIN*/
-main{
-}
 /*CARROSEL*/
 .carrosel{
     background: url(/img/carrosel_tela_inicial.png) no-repeat center;
     background-size: cover;
     height: 50vh;
-
 
     align-items: center;
     display: flex;
@@ -62,6 +59,7 @@ input:focus{
     color: white;
     font-size: 0.9rem;
     font-weight: bold;
+    
 }
 .btn_pesquisar .bi-search{
     color: white;
@@ -145,6 +143,7 @@ input:focus{
     align-items: center;
     justify-content: center;
     gap: 10px;
+    
 }
 
 .carrosel-viewport button{
@@ -207,8 +206,14 @@ input:focus{
     .carrosel .barra_pesquisa{
         width: 550px;
     }
+    .carrosel{
+        height: 40vh;
+    }
 }
 @media screen and (max-width: 625px){
+    .carrosel{
+        height: 30vh;
+    }
     .carrosel .barra_pesquisa{
         width: 450px;
         height: 54px;
@@ -233,22 +238,22 @@ input:focus{
     .carrosel .barra_pesquisa{
         width: 300px;
     }
-}
+} 
 /*LINHA EVENTOS*/
 @media screen and (max-width: 1094px){
-    .caixa_eventos{
-        width: 200px;
-        height: 180px;
-    }
-    .caixa_eventos a img{
-        width: 200px;
-        height: 120px;
-    }
-    .caixa_eventos .data_evento{
-        font-size: 0.75rem;
-        letter-spacing: 0.2px;
-        font-weight: bold;
-    }
+        .caixa_eventos{
+            width: 200px;
+            height: 180px;
+        }
+        .caixa_eventos a img{
+            width: 200px;
+            height: 120px;
+        }
+        .caixa_eventos .data_evento{
+            font-size: 0.75rem;
+            letter-spacing: 0.2px;
+            font-weight: bold;
+        }
 }
 @media screen and (max-width: 706px){
     .carrosel-container{
@@ -257,11 +262,33 @@ input:focus{
     .linha_eventos{
         display: none;
     }
-    main{
-        display: flex;
-        flex-direction: column;
-        gap: 140px;
+}
+@media screen and (max-width: 537px){
+    .carrosel-eventos{
+        width: 100%;
+        height: 234px;
     }
-    
-
+    .carrosel-eventos a img{
+        width: 100%;
+        height: 164px;
+    }
+}    
+@media screen and (max-width: 498px){
+    .carrosel-eventos{
+        height: 204px;
+    }
+    .carrosel-eventos a img{
+        height: 140px;
+    }
+    .carrosel-viewport{
+        gap: 3px;
+    }
+}
+@media screen and (max-width: 380px){
+    .carrosel-eventos{
+        height: 174px;
+    }
+    .carrosel-eventos a img{
+        height: 110px;
+    }
 }
