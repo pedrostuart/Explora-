@@ -22,6 +22,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 30px;
+    
 }
 .carrosel p{
     font-weight: bold;
