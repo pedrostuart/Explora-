@@ -153,7 +153,7 @@ a{
     position: relative;
     right: 352px;
 
-    animation: transicao 1s forwards;
+    animation: transicao 1s forwards; 
     
 }
 .box-verde h1{
@@ -164,4 +164,46 @@ a{
     color: white;
     font-size: 0.9rem;
     font-weight: bold;
+}
+@media screen and (max-width: 750px) {
+    .caixa-geral{
+        flex-direction: column;
+    }
+    .box-login{
+        border-top-right-radius: var(--borda-caixa);
+        border-bottom-left-radius: 0px;
+        animation: transicaoResposivaLogin;
+    }
+    .box-verde{
+        height: 50px;
+        animation: transicaoResposivaVerde 1s forwards;
+        position: relative;
+        right: 0px;
+        border-bottom-right-radius: var(--borda-caixa);
+        border-bottom-left-radius: var(--borda-caixa);
+        gap: 10px;
+    }
+    .box-verde h1{
+        font-size: 1.2rem;
+    }
+    .box-verde p{
+        font-size: 0.8rem;
+    }
+    @keyframes transicaoResposivaVerde{
+    from{
+        transform: translateY(-400px);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+    @keyframes transicaoResposivaLogin{
+    from{
+        transform: translateY(-400px);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 }
