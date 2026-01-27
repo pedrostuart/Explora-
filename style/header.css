@@ -89,16 +89,17 @@ header .botoes_cadastro{
 
 /*BARRA LATERAL*/
 .barra-lateral-header{
-    height: 96vh;
+    height: 100%;
     background-color: white;
     width: 230px;
     position: fixed;
     z-index: 100;
     overflow: auto;
     padding: 15px 15px;
-    box-shadow: 0px 0px 0px  1000px  rgba(31, 31, 31, 0.425);
+    box-shadow: 0px 0px 0px  10000px  rgba(31, 31, 31, 0.425);
     display: none;
     animation: abrirmenu 0.8s forwards; 
+    
 }
 @keyframes abrirmenu{
     
@@ -117,7 +118,7 @@ header .botoes_cadastro{
     flex-direction: column;
     justify-content: space-between;
     display: flex;
-    margin: 0px auto;
+    margin: 0px auto 30px;
 }
 .barra-lateral-header ul{
     list-style: none;
