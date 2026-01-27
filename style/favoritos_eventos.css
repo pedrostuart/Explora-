@@ -45,6 +45,7 @@
     border-bottom-left-radius: 33px;
     border-top-left-radius: 33px;
     border: 0;
+    margin-left: 20px;
 }
 .barra_pesquisa input:focus{
     outline: none;
@@ -170,6 +171,39 @@
     color: #8e8e8e;
     font-size: 0.7rem;
 }
+/*BARRA DE PESQUISA*/
+@media screen and (max-width: 770px){
+    .barra_pesquisa{
+        width: 550px;
+    }
+}
+@media screen and (max-width: 625px){
+    .barra_pesquisa{
+        width: 450px;
+        height: 54px;
+    }
+    .btn_pesquisar{
+        padding: 10px;
+        font-size: 0.75rem;
+    }
+}
+@media screen and (max-width: 510px){
+    .barra_pesquisa{
+        width: 350px;
+    }
+    .btn_pesquisar{
+        margin-right: 10px;
+    }
+    .barra_pesquisa input{
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 400px){
+    .barra_pesquisa{
+        width: 300px;
+    }
+} 
+/*LINHA EVENTOS*/
 @media screen and (max-width: 564px){
     .caixa_eventos{
         width: 381px;
