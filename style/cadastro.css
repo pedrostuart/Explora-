@@ -49,7 +49,6 @@ main{
     display: flex;
     justify-content: space-around;
     height: 400px;
-    
     width: 355px;
 }
 h1{
@@ -167,4 +166,37 @@ a{
     color: white;
     font-size: 0.9rem;
     font-weight: bold;
+}
+.login-responsivo{
+    display: none;
+}
+@media screen and (max-width: 920px) {
+    .box-verde{
+        display: none;
+    }
+    .login-responsivo{
+        display: block;
+}
+}
+@media screen and (max-width: 480px){
+    .box-cadastro{
+        padding: 20px;
+        height: 100%;
+        gap: 20px;
+        width: 300px;
+    }
+    .barra_input{
+        width: 90%;
+    }
+    .login-responsivo{
+        padding-left: 20px;
+    }
+}
+@media screen and (max-width: 390px){
+    .barra_input{
+        width: 85%;
+    }
+    .box-cadastro{
+        width: 250px;
+    }
 }

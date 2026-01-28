@@ -256,3 +256,13 @@ label{
 .aplicar:hover{
     text-decoration: underline;
 }
+@media screen and (max-width: 480px) {
+    .box{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 380px){
+    .box{
+        width: 240px;
+    }
+}

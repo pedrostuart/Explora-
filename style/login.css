@@ -92,6 +92,9 @@ a{
     padding-left: 4px;
 
 }
+.cadastro-responsivo :nth-child(2){
+    display: none;
+}
 .btn-preferencia{
     background-color: var(--azul);
     padding: 9px 10px;
@@ -153,7 +156,7 @@ a{
     position: relative;
     right: 352px;
 
-    animation: transicao 1s forwards;
+    animation: transicao 1s forwards; 
     
 }
 .box-verde h1{
@@ -164,4 +167,21 @@ a{
     color: white;
     font-size: 0.9rem;
     font-weight: bold;
+}
+.cadastro-responsivo{
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width: 920px) {
+    .box-verde{
+        display: none;
+    }
+}
+@media screen and (max-width: 400px){
+    .box-login{
+        padding: 20px;
+    }
+    .barra_input{
+        width: 250px;
+    }
 }

@@ -8,38 +8,68 @@
     <link rel="stylesheet" href="style/header.css">
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="img/icone-logo.ico" type="image/x-icon">
 </head>
 <body>
+
+    <!-- Barra Lateral Header -->
+    <section class="barra-lateral-header">
+        <nav>
+            <div class="fechar-logo">
+                <img src="img/logo.png" alt="Logo Site">
+                <button class="fechar-menu"><i class="bi bi-x"></i></button>
+            </div>
+            
+            <ul id="ul">
+                <li> <a href="index.html"><i class="bi bi-house-fill"></i> Início</a></li>
+                <li> <a href="eventos.html"><i class="bi bi-calendar-event-fill"></i> Eventos</a></li>
+                <li> <a href="mapa.html"><i class="bi bi-map-fill"></i> Mapa</a></li>
+                <li> <a href="favoritos_eventos.html"><i class="bi bi-heart-fill"></i> Favoritos</a></li>
+            </ul>
+            <div class="botoes_cadastro">
+                <a href="login.html" id="entrar">Entrar</a>
+                <a href="cadastro.html" id="cadastrar">Cadastre-se</a>
+            </div>  
+        </nav>
+        
+    </section>
+    
     <header>
         <nav>
-        <a href="index.html"><img src="img/logo.png" alt="Logo Site"></a>
-        
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="eventos.html">Eventos</a></li>
-                <li><a href="mapa.html">Mapa</a></li>
-                <li><a href="favoritos_eventos.html">Favoritos</a></li>
-            </ul>
-        
+        <div class="menu-logo">
+            <button class="hamburguer"><i class="bi bi-list"></i></button>
+            <a href="index.html"><img src="img/logo.png" alt="Logo Site"></a>
+        </div>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="mapa.html">Mapa</a></li>
+            <li><a href="favoritos_eventos.html">Favoritos</a></li>
+        </ul>
         <div class="botoes_cadastro">
             <a href="login.html" id="entrar">Entrar</a>
             <a href="cadastro.html" id="cadastrar">Cadastre-se</a>
         </div>
         </nav>
+        
     </header>
+    
     <main>
+        
+        
         <section class="carrosel">
+            
             <p>Encontre os melhores shows, festivais, experiências gastronômicas e muito mais. <br>
             Tudo em um só lugar.</p>
             <form class="barra_pesquisa">
                 <input type="text"  placeholder="Buscar eventos, locais...">
-                
                 <a class="btn_pesquisar">
                     <i class="bi bi-search"></i>
                     Pesquisar
                 </a>
             </form>
         </section>
+        
         <section class="eventos_destaque">
             <h1>Eventos em Destaque</h1>
             <div class="linha_eventos">
@@ -48,8 +78,10 @@
                         <span class="data_evento">HOJE</span>
                         <img src="img/imagem_evento.jpg" alt="Imagem do Evento">
                     </a>
-                    <p class="nome_show">The Weekend</p>
-                    <p class="distancia_show">Morumbis - 12km de distância</p>
+                    <div class="texto-evento">
+                        <p class="nome_show">The Weekend</p>
+                        <p class="distancia_show">Morumbis - 12km de distância</p>
+                    </div>
                 </div>
                 <div class="caixa_eventos">
                     <a href="informação_evento.html">
@@ -85,11 +117,14 @@
                 </div>
             </div>
 
-
+            
             <!-- Carrosel tela celular -->
             <div class="carrosel-container">
+
                 <div class="carrosel-viewport">
+
                     <button class="btn-arrow-left"><i class="bi bi-chevron-left"></i></button>
+
                     <div class="carrosel-eventos">
                         <a href="informação_evento.html">
                                 <span class="data_evento">HOJE</span>
@@ -98,15 +133,21 @@
                             <p class="nome_show">The Weekend</p>
                             <p class="distancia_show">Morumbis - 12km de distância</p>
                     </div>
+
                     <button class="btn-arrow-left"><i class="bi bi-chevron-right"></i></button>
+
                 </div>
+
                 <div class="carrossel-indicadores" id="indicadores">
                     <button class="ativo"></button>
                     <button></button>
                     <button></button>
                 </div>    
+                
             </div>
+
         </section>
+        
         <section class="eventos_proximos">
             <h1>Eventos Próximos</h1>
              <div class="linha_eventos">
@@ -173,6 +214,7 @@
                 </div>    
             </div>
         </section>
+        
     </main>
     <footer>
         <div class="coluna-footer">
@@ -199,5 +241,8 @@
             </div>
         </div>
     </footer>
+    
+    <script src="javascript/menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </body>
 </html>

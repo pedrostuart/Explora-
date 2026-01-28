@@ -11,7 +11,10 @@
 }
 main{
     display: flex;
-    
+    height: 100%;
+}
+html, body{
+    height: 100vh;
 }
 /*MENU LATERAL*/
 
@@ -23,8 +26,19 @@ main{
     display: flex;
     flex-direction: column;
     gap: 25px;
+    background-color: white;
 }
-
+.fechar-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fechar-link button{
+    display: none;
+}
+.btn-preferencia-resposivo{
+    display: none;
+}
 /*MENU LATERAL (BOTÕES) (TITULO)*/
 h2{
     font-size: 16px;
@@ -95,6 +109,9 @@ h2{
     border-radius: var(--borda-botao);
     
 }
+.orcamento #preco{
+    padding: 10px 10px 10px 0px;
+}
 .orcamento label{
     font-weight: bolder;
     
@@ -110,6 +127,7 @@ h2{
     border: none;
     width: 100%;
     padding: 13px 15px;
+    
 }
 .orcamento input:focus{
     outline: none;
@@ -135,13 +153,8 @@ h2{
     width: 100%;
     display: flex;
     position: relative;
-}
-
-.mapa div{
-    width: 100%;
-    height: 690px;
-    
-}    
+    height: 100vh;
+}  
 .mapa iframe{
     width: 100%;
     position: absolute;
@@ -168,6 +181,7 @@ h2{
     border-bottom-left-radius: 33px;
     border-top-left-radius: 33px;
     border: 0;
+    margin-left: 20px;
 }
 .barra_pesquisa input:focus{
     outline: none;
@@ -212,4 +226,138 @@ h2{
     gap: 5px;
     align-items: center;
     display: flex;
+}
+/*BARRA DE PESQUISA*/
+@media screen and (max-width: 1010px){
+    .mapa .barra_pesquisa{
+        width: 550px;
+    }
+}
+@media screen and (max-width: 867px){
+    .mapa .barra_pesquisa{
+        width: 450px;
+        height: 54px;
+    }
+    .btn_pesquisar{
+        padding: 10px;
+        font-size: 0.75rem;
+    }
+}
+@media screen and (max-width: 757px){
+    .mapa .barra_pesquisa{
+        width: 350px;
+    }
+    .btn_pesquisar{
+        margin-right: 10px;
+    }
+    .barra_pesquisa input{
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 660px){
+    
+    .mapa .barra_pesquisa{
+        width: 450px;
+    }
+}
+@media screen and (max-width: 500px){
+    .mapa .barra_pesquisa{
+        width: 400px;
+    }
+    .btn_pesquisar{
+        margin-right: 10px;
+    }
+    .barra_pesquisa input{
+        margin-left: 10px;
+    }    
+}
+@media screen and (max-width: 450px){
+    .mapa .barra_pesquisa{
+        width: 300px;
+    }
+    
+}
+/*MAIN*/
+@media screen and (max-width: 660px){
+    .mapa{
+        width: 90%;
+        margin: 0px auto;
+        height: 80vh;
+        gap: 20px;
+        padding: 20px 0px;
+        flex-direction: column-reverse;
+        
+    }
+    .mapa iframe{
+        margin: auto;
+        border-radius: var(--borda-caixa);
+        border: 1.5px solid var(--verde);  
+        position: initial;
+        box-shadow: var(--sombra);
+    }
+    .mapa .barra_pesquisa{
+        position: initial;
+    }
+    .fechar-link button{
+        display: block;
+    }
+}
+@media screen and (max-width: 455px){
+    .mapa{
+        height: 70vh;
+    }
+    main{
+        height: 80%;
+    }
+}
+@media screen and (max-width: 380px){
+    .mapa{
+        height: 65vh;
+    }
+}
+/*BARRA LATERAL RESPONSIVA*/
+@media screen and (max-width: 660px){
+    .menu-lateral{
+        display: none;
+        position: fixed;
+        z-index: 100;
+        width: 220px;
+        height: 100%;
+        animation: abrirmenu 0.8s forwards; 
+        box-shadow: 0px 0px 0px  1000px  rgba(31, 31, 31, 0.425);
+        top: 0;
+    }
+    .menu-lateral .fechar-menu{
+        display: block;
+    }
+    @keyframes abrirmenu{
+    
+        0%{
+            transform: translateX(-230px);
+        }
+        100%{
+            transform: translateX(0px);
+        }
+    
+    }
+    .btn-preferencia-resposivo{
+    background-color: var(--azul);
+    padding: 9px 10px;
+    border-radius: var(--borda-botao);
+    border: 1px solid var(--azul);
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    }
+}
+@media screen and (max-width: 537px){
+    .menu-lateral{
+        padding: 20px 13px;
+    }
+    .menu-lateral h2{
+        padding-left: 0;
+    }  
 }

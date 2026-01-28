@@ -13,26 +13,58 @@
     
 </head>
 <body>
+    <section class="barra-lateral-header">
+        
+        <nav>
+            <div class="fechar-logo">
+                <img src="img/logo.png" alt="Logo Site">
+                <button class="fechar-menu"><i class="bi bi-x"></i></button>
+            </div>
+            
+            <ul>
+                <li> <a href="index.html"><i class="bi bi-house-fill"></i> Início</a></li>
+                <li> <a href="eventos.html"><i class="bi bi-calendar-event-fill"></i> Eventos</a></li>
+                <li> <a href="mapa.html"><i class="bi bi-map-fill"></i> Mapa</a></li>
+                <li> <a href="favoritos_eventos.html"><i class="bi bi-heart-fill"></i> Favoritos</a></li>
+            </ul>
+            <div class="botoes_cadastro">
+                <a href="login.html" id="entrar">Entrar</a>
+                <a href="cadastro.html" id="cadastrar">Cadastre-se</a>
+            </div>  
+        </nav>
+        
+    </section>
+    
     <header>
         <nav>
-        <a href="index.html"><img src="img/logo.png" alt="Logo Site"></a>
-        
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="eventos.html">Eventos</a></li>
-                <li><a href="mapa.html">Mapa</a></li>
-                <li><a href="favoritos_eventos.html">Favoritos</a></li>
-            </ul>
-        
+        <div class="menu-logo">
+            <button class="hamburguer"><i class="bi bi-list"></i></button>
+            <a href="index.html"><img src="img/logo.png" alt="Logo Site"></a>
+        </div>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="eventos.html">Eventos</a></li>
+            <li><a href="mapa.html">Mapa</a></li>
+            <li><a href="favoritos_eventos.html">Favoritos</a></li>
+        </ul>
         <div class="botoes_cadastro">
+<<<<<<< HEAD
             <a id="entrar" href="login.html">Entrar</a>
             <a id="cadastrar" href="cadastro.html">Cadastre-se</a>
+=======
+            <a href="login.html" id="entrar">Entrar</a>
+            <a href="cadastro.html" id="cadastrar">Cadastre-se</a>
+>>>>>>> 7ce8d0a191a045ebe1b3d729fcc938deb7429115
         </div>
         </nav>
+        
     </header>
     <main>
         <section class="menu-lateral">
-            <a href="eventos.html"><span class="material-symbols-outlined">map_search</span>Sem Mapa</a>
+            <div class="fechar-link">
+                <a href="mapa.html"><span class="material-symbols-outlined">map_search</span>Visualizar Mapa</a>
+                <button class="fechar-menu"><i class="bi bi-x"></i></button>
+            </div>
             
             <div class="preferencias">
              <h2>Data</h2>   
@@ -136,19 +168,19 @@
             </div>
         </section>
         <section class="mapa">
-            <div>
+            
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d117059.94833913403!2d-46.774161788680466!3d-23.528064212341896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-PT!2sbr!4v1761582666252!5m2!1spt-PT!2sbr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                
                 </iframe>
+                <button class="btn-preferencia-resposivo">Filtrar<i class="bi bi-funnel-fill"></i></button>
                 <div class="barra_pesquisa">
-                    <input type="text"  placeholder="Buscar eventos, locais, categorias...">
+                    <input type="text"  placeholder="Buscar eventos, locais...">
                 
                     <button class="btn_pesquisar">
                         <i class="bi bi-search"></i>
                         Pesquisar
                     </button>
                 </div>
-            </div>
+                
         </section>
     </main>
     <footer>
@@ -176,5 +208,7 @@
             </div>
         </div>
     </footer> 
+    <script src="javascript/menu.js"></script>
+    <script src="javascript/eventos-mapa.js"></script>
 </body>
 </html>

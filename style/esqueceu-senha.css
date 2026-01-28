@@ -4,7 +4,7 @@
     
 }
 html, body {
-    height: 100%;
+    height: 100vh  ;
 }
 :root{
     --verde: #1A824D;
@@ -29,11 +29,14 @@ main{
     justify-content: center;
     align-items: center;
     display: flex;
+    padding: 0px 20px;
+    height: 100vh;
+
 }
 .box{
     background-color: white;
-    height: 550px;
     width: 400px;
+    height: 500px;
     border-radius: var(--borda-caixa);
     box-shadow: var(--sombra);
     flex-direction: column;
@@ -41,6 +44,7 @@ main{
     justify-content: space-evenly;
     align-items: center;
     display: flex;
+    
 
 }
 h1{
@@ -97,4 +101,18 @@ input:focus{
 .btn-preferencia:hover{
     background-color: white;
     color: var(--azul);
+}
+@media screen and (max-width: 390px) {
+    main{
+        padding: 0px 10px;
+    }
+    .box{
+        justify-content: center;
+        gap: 20px;
+        height: 400px;
+        padding: 20px 10px;
+    }
+    .box p{
+        font-size: 0.85rem;
+    }
 }
