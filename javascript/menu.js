@@ -12,7 +12,6 @@ let fechar = document.querySelector(".fechar-menu")
 
 window.addEventListener("resize", ()=>{ 
     if (window.innerWidth > 685) {
-    
         menu.style.display = "none";
     }
 });
