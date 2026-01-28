@@ -92,6 +92,9 @@ a{
     padding-left: 4px;
 
 }
+.cadastro-responsivo :nth-child(2){
+    display: none;
+}
 .btn-preferencia{
     background-color: var(--azul);
     padding: 9px 10px;
