@@ -374,7 +374,7 @@ main i{
     border: 0;
     border-radius: var(--borda-caixa);
     box-shadow: 1px 1px 1px 1000px rgba(31, 31, 31, 0.425);
-    position: fixed; /* ou fixed */
+    position: fixed; 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

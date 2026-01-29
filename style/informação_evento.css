@@ -306,6 +306,21 @@
 .ler-mais{
     display: none;
 }
+.btn-preferencia{
+    background-color: var(--azul);
+    padding: 9px 10px;
+    border-radius: var(--borda-botao);
+    border: 1px solid var(--azul);
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin: 20px auto 0px;
+    display: flex;
+    gap: 4px;
+    cursor: pointer;
+    
+
+}
 /*CARROSEL RESPONSIVO*/
 @media screen and (max-width: 1550px){
     .bloco_informacoes{
@@ -331,11 +346,25 @@
     .bloco_informacoes{
         margin-left: 30px;
     }
+    .carrosel{
+        height: 40vh;
+    }
 }
 /*MAIN*/
 @media screen and (max-width: 1380px){
     #ingressos{
         display: none;
+        position: fixed;
+        background-color: white;
+        top: 100px;
+        height: 650px;
+        justify-content: center;
+        box-shadow: 1px 1px 1px 1000px rgba(31, 31, 31, 0.425);
+        z-index: 1000;
+    }
+    #ingressos .abrir-mapa{
+        margin: 0 auto;
+        
     }
     #recomendados{
         width: 600px;
@@ -425,11 +454,41 @@
     .eventos-recomendados{
         width: 80%;
     }
-    
+    #ingressos{
+        width: 80%; 
+    }
+    .info-precos-ingressos .precos-ingressos{
+        width: 150px;
+    }
 }
+
 @media screen and (max-width: 470px){
     #atracoes{
         width: 300px;
+    }
+    .bloco_informacoes{
+        margin-left: 15px;
+    }
+    /*CARROSEL*/
+    .carrosel{
+        height: 30vh;
+    }
+}
+@media screen and (max-width: 445px){
+    #ingressos .abrir-mapa{
+        width: 300px;
+    }
+    .info-precos-ingressos .precos-ingressos{
+        width: 110px;
+    } 
+    .info-precos-ingressos .precos-ingressos h2{
+        font-size: 0.9rem;
+        padding-top: 5px;
+        padding-left: 5px;
+    } 
+    .info-precos-ingressos .precos-ingressos p{
+        padding-left: 5px;
+        padding-top: 5px;
     }
 }
 @media screen and (max-width: 418px){
@@ -441,6 +500,18 @@
     }
     .caixas h1{
         font-size: 1.5rem;
+    }
+    .bloco_informacoes h1{
+        font-size: 28px;
+    }
+    .bloco_informacoes p{
+        font-size: 13px;
+    }
+    #ingressos .abrir-mapa{
+        width: 250px;
+    }
+    #ingressos{
+        width: 280px;
     }
 }
 @media screen and (max-width: 360px){
