@@ -446,6 +446,9 @@
 @media screen and (max-width: 360px){
     #atracoes{
         width: 260px;
-        
+
+    }
+    #atracoes h1{
+        font-size: 1.4rem;
     }
 }
