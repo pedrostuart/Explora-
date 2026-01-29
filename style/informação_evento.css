@@ -228,6 +228,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: center;
 }
 .artistas{
     width: 195px;
@@ -301,4 +302,153 @@
 .distancia_show{
     color: #8e8e8e;
     font-size: 0.7rem;
+}
+.ler-mais{
+    display: none;
+}
+/*CARROSEL RESPONSIVO*/
+@media screen and (max-width: 1550px){
+    .bloco_informacoes{
+        margin-left: 200px;
+    }
+}
+@media screen and (max-width: 1386px){
+    .bloco_informacoes{
+        margin-left: 150px;
+    }
+}
+@media screen and (max-width: 1261px){
+    .bloco_informacoes{
+        margin-left: 100px;
+    }
+}
+@media screen and (max-width: 990px){
+    .bloco_informacoes{
+        margin-left: 60px;
+    }
+}
+@media screen and (max-width: 755px){
+    .bloco_informacoes{
+        margin-left: 30px;
+    }
+}
+/*MAIN*/
+@media screen and (max-width: 1380px){
+    #ingressos{
+        display: none;
+    }
+    #recomendados{
+        width: 600px;
+    }
+    .eventos-recomendados{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 879px){
+    #atracoes{
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 850px){
+    #sobre_evento{
+        width: 600px;
+    }
+    #extras{
+        display: none;
+    }
+    .linha{
+        flex-direction: column;
+        
+    }
+    .ler-mais{
+    display: flex;
+    margin: 0 auto 0px 30px;
+    background: none;
+    border: 0;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 1.05rem;
+    }
+    .info_sobre_evento{
+        padding-bottom: 15px;
+    }
+    .ler-mais:hover{
+        color: var(--verde);
+    }
+}
+@media screen and (max-width: 850px){
+    #atracoes .titulo_icon{
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 630px){
+    .eventos-recomendados{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 604px){
+    #atracoes{
+        max-width: 480px;
+    }
+    .caixas-artistas{
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        justify-content: initial;
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 575px){
+    #sobre_evento{
+        padding: 0;
+        padding-bottom: 10px;
+    }
+    .info_sobre_evento{
+        padding: 15px;
+    }
+    .informacoes_eventos{
+        padding: 20px;
+    }
+    .info_sobre_evento p{
+        font-size: 0.8rem;
+        line-height: 0px;
+    }
+    .ler-mais{
+        margin: 0 auto 0px 15px;
+    }
+}
+@media screen and (max-width: 550px){
+    #atracoes{
+        width: 400px;
+    }
+}
+@media screen and (max-width: 510px){
+    .eventos-recomendados{
+        width: 80%;
+    }
+    
+}
+@media screen and (max-width: 470px){
+    #atracoes{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 418px){
+    .eventos-recomendados{
+        width: 90%;
+    }
+    #recomendados{
+        padding: 10px;
+    }
+    .caixas h1{
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width: 360px){
+    #atracoes{
+        width: 260px;
+
+    }
+    #atracoes h1{
+        font-size: 1.4rem;
+    }
 }
