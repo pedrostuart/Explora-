@@ -8,11 +8,11 @@ btnFiltrar.addEventListener("click", () =>{
 let filtrarFechar = document.querySelector(".btn-filtrar .btn-preferencia")
 
 filtrarFechar.addEventListener("click", ()=>{
-    menuFiltrar.style.display = 'none'
+    menuFiltrar.style.display = ''
 })
 /*FECHAR MENU FILTROS*/
 let fecharMenuFiltros = document.querySelector(".fechar-link .fechar-menu")
 fecharMenuFiltros.addEventListener("click", ()=>{
     
-    menuFiltrar.style.display = 'none'
+    menuFiltrar.style.display = ''
 })

@@ -170,6 +170,11 @@ header .botoes_cadastro{
         gap: 10px;
     }
 }
+@media screen and (min-width: 686px){
+    .barra-lateral-header{
+        display: none;
+    }
+}
 @media screen and (max-width: 685px){
     header ul{
         display: none;
@@ -182,7 +187,7 @@ header .botoes_cadastro{
     }
     .hamburguer{
         display: block;
-}
+    }
 }
 @media screen and (max-width: 508px){
     header .botoes_cadastro{
